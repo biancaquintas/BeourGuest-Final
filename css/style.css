@@ -1,0 +1,762 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*starts home page*/
+.nav {
+    display: flex;
+    justify-content: space-between
+}
+
+.nav img {
+    padding: 10px;
+}
+
+.nav__botones ul {
+    display: flex;
+    padding-top: 60px;
+    padding-right: 100px;
+}
+
+.nav__botones ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+.nav__botones ul li a {
+    color: #B81F24;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.description h1 {
+    text-align: center;
+    padding: 50px;
+    color: #245685;
+    font-family: 'Port Lligat Slab';
+    font-size: 40px;
+}
+
+.description div {
+    text-align: justify;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 120px;
+    padding-top: 70px;
+}
+
+.descrip h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: #245685;
+    font-weight: 7000;
+}
+
+.descrip p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #245685;
+}
+
+.descrip h3 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #245685;
+    font-weight: lighter;
+}
+
+
+
+.process {
+    padding-top: 100px;
+}
+
+.get_started {
+    background-color: #FAEAD0;
+    padding: 20px;
+}
+
+.get_started h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    text-align: center;
+    color: #245685;
+    font-weight: lighter;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.numbers {
+    display: grid;
+    justify-items: center;
+}
+
+.numbers p {
+    font-family: 'Port Lligat Slab';
+    font-size: 25px;
+    color: #245685;
+    text-align: center;
+}
+
+.final_section {
+    padding: 80px;
+}
+
+.final_section h3 {
+    text-align: center;
+    font-family: 'Port Lligat Slab';
+    font-weight: lighter;
+    font-size: 30px;
+    color: #245685;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-color: #253C59;
+    display: flex;
+    justify-content: space-between
+}
+
+.core__info {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.core__info ul li {
+    list-style: none;
+    color: white;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.follow__us {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.follow__us p {
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.social__media img {
+    padding: 5px;
+}
+
+.payment {
+    padding-right: 40px;
+    padding-top: 30px;
+}
+
+.payment p {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    font-weight: lighter;
+}
+/*ends home page*/
+
+/*starts parks page*/
+.parks__tittle h1 {
+    background-image: url(../img/parks.png);
+    width: 100%;
+    height: 500px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.presentation h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    text-align: center;
+    color: #245685;
+    font-weight: lighter;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.info h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    background-color: #A24CE8;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    align-content: center;
+    height: 100px;
+    padding-right: 120px;
+    padding-left: 120px;
+    border-bottom: solid;
+    color: #245685;
+}
+
+.parks {
+    display: flex;
+    padding: 50px;
+    justify-content: center
+}
+
+.studios {
+    background-color: #FAEAD0;
+    width: 500px;
+    height: 380px;
+    text-align: center;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+.counting li {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: black;
+}
+
+.see_more {
+    padding-bottom: 2px;
+    padding-top: 10px;
+}
+
+.see_more button {
+    background-color: #245685;
+    border-style: groove;
+    border-color: white;
+    width: 90px;
+}
+
+.see_more button a {
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.pic img {
+    width: 500px;
+    height: 380px;
+}
+
+.water {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    border-top: solid;
+    color: #245685;
+}
+
+.water h2 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    text-align: center;
+    color: #245685;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.sun {
+    display: flex;
+    justify-content: center
+}
+
+.both h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    color: #245685;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.both img {
+    width: 700px;
+    height: 392px;
+}
+
+.additional_info {
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.additional_info p {
+    font-family: 'Port Lligat Slab';
+    text-align: justify;
+    color: #245685;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+/*ends parks page*/
+
+
+
+/*starts hotels page*/
+
+.accom h1 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    text-align: center;
+    color: #245685;
+    border-bottom: solid;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around
+}
+
+.offer__container {
+    display: flex;
+    width: 900px;
+    padding-top: 30px;
+}
+
+.offers p {
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    color: #253C59;
+    font-weight: 500;
+    background-color: #ADD4D9;
+}
+
+.tittle_two h2 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    padding: 50px;
+    color: #A6775B;
+    font-weight: lighter;
+}
+
+.three {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.econ_mod_lux {
+    width: 370px;
+    height: 425px;
+    box-shadow: 10px 10px 8px #888888
+}
+
+.econ_mod_lux p {
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #A6775B;
+    padding-left: 10px;
+}
+
+.econ_mod_lux h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding: 10px;
+    color: #A6775B;
+}
+
+.price p {
+    color: #A6775B;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 10px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.more_op {
+    padding: 20px;
+}
+
+.more_op h2 {
+    padding-top: 120px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 500;
+    color: #A6775B;
+}
+
+.button_container {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around
+}
+
+.button_container button {
+    background-color: #245685;
+    border-style: groove;
+    border-color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.button_container button a {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.argument {
+    display: flex;
+    justify-content: center;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+
+.argument p {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #253C59;
+    padding: 20px;
+    text-align: left;
+    border-style: dotted;
+    border-color: #A6775B;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.video iframe {
+    width: 748px;
+    height: 457px;
+}
+/*ends hotels page*/
+
+
+/*starts news page*/
+
+.news{
+    padding: 30px;
+    background-color: #245685;
+}
+
+.news_header h1{
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.newsNews{
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+}
+
+.news_img img{
+    width: 100%;
+    height: 550px;
+}
+
+.news_descrip{
+    background-color: #BFCDD9;
+    width: 100%;
+    height: 550px;
+}
+
+.news_descrip ul li{
+    list-style: none;
+}
+
+.tittle h2{
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: -1px;
+    display: flex;
+    text-align: left;
+}
+
+.tittle h3{
+    letter-spacing: -1px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    text-align: left;
+}
+
+.newsNews p{
+    display: flex;
+    text-align: left;
+    padding: 40px;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+
+.information_news{
+    display: flex;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.newsTwo{
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+}
+
+.newsTwo p{
+    display: flex;
+    text-align: left;
+    padding: 40px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    }
+
+    .more_info{
+        display: flex;
+        padding-top: 100px;
+        padding-left: 100px ;
+        padding-right: 100px;
+        background-color: #245685;
+        
+    }
+
+    .name{
+        text-align: center;
+        height: 500px;
+        width: 800px;
+    }
+
+    .name p{
+        font-family: 'Poppins';
+        font-size: 25px;
+        color: white;
+        padding: 50px;
+        font-weight: lighter;
+        text-decoration: underline;
+    }
+.container__form{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+    .form{
+        padding: 50px;
+        text-align: center;
+    }
+
+    .form h3{
+        font-family: 'Poppins';
+        font-size: 30px;
+        color: #253C59;
+        text-align: center;  
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .fill{
+        background-color: #BFCDD9;
+        height: 100px;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+.fill p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #253C59;
+}
+    .newsletter{
+        font-family: 'Poppins';
+        font-size: 15px;
+        color: #253C59;
+    }
+
+/*ends news page*/
+
+/*starts contact page*/
+
+.contact__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    background-color: #D9B4B4;
+}
+
+.box__one{
+    background-color: #1E1E1E;
+    height: 800px;
+    width: 800px;
+}
+
+.box__one h2{
+    font-family: 'Port Lligat Slab';
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.box__one h1{
+    font-family: 'Port Lligat Slab';
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.form__contacts{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.individual{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.individual p{
+    color: white;
+    font-family: 'Port Lligat Slab';
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.individual input{
+    height: 30px;
+    width: 200px;
+}
+
+.individual button{   
+    height: 30px;
+    width: 50px
+}
+
+.individual__big{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.individual__big input{
+    width: 500px;
+    height: 100px;
+}
+
+.message__send{
+    padding-top: 20px;
+}
+
+.box__two{
+    background-color: white;
+    height: 800px;
+    width: 800px;
+}
+
+@media (max-width: 763px) { 
+    .container__footer{
+        display: flex;
+    }
+    .footer{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+    }
+    .payment{
+        text-align: center;
+        padding: 0px;
+        grid-column: 1/3;
+    }
+    .core__info{
+        padding: 0px;
+        text-align: center;
+    }
+    .core__info ul{
+        padding: 0px;
+        text-align: center;
+    }
+    .follow__us{
+        text-align: center;
+        padding: 0px;
+    }
+ }
+ @media (max-width: 550px) { 
+    .descrip h2{
+        font-size: 2rem;
+    }
+ }
