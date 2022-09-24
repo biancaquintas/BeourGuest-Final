@@ -10,62 +10,64 @@
     <link href='https://fonts.googleapis.com/css?family=Port Lligat Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Port Lligat Sans' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>News</title>
 </head>
-<body>
-<!--starts nav-->
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../img/baloon.jpg" alt="Logo de Be Our Guest"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse nav__botones" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="parks.html">Parks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hotels.html">Hotels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!--ends nav-->
 
-<!--starts header-->
+<body>
+    <!--starts nav-->
+    <nav class="navbar navbar-expand-lg navbar__custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/baloon.jpg" alt="Logo de Be Our Guest"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav__botones" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parks.html">Parks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--ends nav-->
+
+    <!--starts header-->
     <header class="news">
-        <div class="news_header">
+        <div class="news__header">
             <h1>WHAT’S NEW IN DISNEY WORLD ORLANDO IN 2022?</h1>
         </div>
     </header>
-<!--ends header-->
+    <!--ends header-->
 
-<!--starts news-->
+    <!--starts main-->
     <div class="newsNews">
-        <div class="news_img">
+        <!--starts uardians of the galaxy section-->
+        <div class="news__img">
             <img src="../img/guardians_of_the_galaxy.png" alt="Guardians of the Galaxy attraction">
         </div>
-        <div class="news_descrip">
+        <div class="news__descrip">
             <div class="tittle">
-            <h2>Guardians of  the Galaxy:</h2>
-            <h3>Cosmic Rewind</h3>
+                <h2>Guardians of the Galaxy:</h2>
+                <h3>Cosmic Rewind</h3>
             </div>
             <p>Take off on an intergalactic chase through space and time with the Guardians of the Galaxy.</p>
-            <div class="information_news">
+            <div class="information__news">
                 <ul>
                     <li>
                         <i class="fa-regular fa-compass"></i>
@@ -88,15 +90,17 @@
             <p>Not recommended for young kids.</p>
         </div>
     </div>
+    <!--ends uardians of the galaxy section-->
 
     <div class="newsTwo">
-        <div class="news_descrip">
+        <!--starts ratatouille section-->
+        <div class="news__descrip">
             <div class="tittle">
                 <h2>Remy's Ratatouille Adventure</h2>
             </div>
             <p>Feel like you’ve shrunk down to Chef Remy’s size for a 4D culinary adventure based on the Disney and
                 Pixar film Ratatouille. When you’re small, life is a big adventure!</p>
-            <div class="information_news">
+            <div class="information__news">
                 <ul>
                     <li>
                         <i class="fa-regular fa-compass"></i>
@@ -115,53 +119,55 @@
                         From 8:30 AM to 9:00 PM
                     </li>
                 </ul>
-            </div>    
+            </div>
             <p>C’est magnifique!</p>
         </div>
-        <div class="news_img">
+        <div class="news__img">
             <img src="../img/remi.png" alt="Ratatouliie attraction">
         </div>
     </div>
-<!--ends news-->
+    <!--ends ratatouille section-->
+    <!--ends main-->
 
-<!--starts more info-->
-    <div class="more_info">
-        <div class="name">
+    <!--starts more info-->
+    <div class="more__info">
+        <div class="news__name">
             <img src="../img/anniversary.png" alt="50 Anniversary of Walt Disney World">
             <p>The Walt Disney World 50th Anniversary Celebration</p>
         </div>
-        <div class="name">
+        <div class="news__name">
             <img src="../img/space.png" alt="Space 220 Restaurant">
             <p> Space 220 Restaurant</p>
         </div>
-        <div class="name">
+        <div class="news__name">
             <img src="../img/star_wars.png" alt="Star Wars attraction">
             <p>Star Wars Galaxy´s Edge</p>
         </div>
     </div>
-<!--ends more info-->
+    <!--ends more info-->
 
-<!--starts form-->
-<div class="container__form">
-    <div class="form">
-        <h3>Find more new attractions and experiences <a href="https://www.disneytouristblog.com/new-next-disney-world-rides/">here</a></h3>
-        <div class="fill">
-            <p>Suscribe to our newsletter to receive offer alerts and useful information</p>
-            <form action="send.php" class="newsletter">
-                <div>
-                    <label for="email">Email adress</label>
-                    <input type="text" id="email">
-                </div>
-                <div>
-                    <input type="submit" value="Send">
-                </div>
-            </form>
+    <!--starts form-->
+    <div class="container__form">
+        <div class="news__form">
+            <h3>Find more new attractions and experiences <a
+                    href="https://www.disneytouristblog.com/new-next-disney-world-rides/">here</a></h3>
+            <div class="fill">
+                <p>Suscribe to our newsletter to receive offer alerts and useful information</p>
+                <form action="send.php" class="newsletter">
+                    <div>
+                        <label for="email">Email adress</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="button__news">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
     <!--ends form-->
 
-<!--starts footer-->
+    <!--starts footer-->
     <footer>
         <div class="footer">
             <div class="core__info">
@@ -194,11 +200,11 @@
             </div>
         </div>
     </footer>
-<!--ends footer-->
+    <!--ends footer-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
 </body>
 

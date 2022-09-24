@@ -9,14 +9,14 @@
     <link href='https://fonts.googleapis.com/css?family=Port Lligat Slab' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Port Lligat Sans' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Hotels</title>
 </head>
 
 <body>
     <!--starts nav-->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar__custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img src="../img/baloon.jpg" alt="Logo de Be Our Guest"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -61,42 +61,42 @@
     </main>
     <!--ends main-->
 
-    <!--starts hotel options-->
-    <div class="tittle_two">
+    <!--starts hotel cards-->
+    <div class="tittle__hotels">
         <h2>Best options according to your budget and location preference...</h2>
     </div>
-    <div class="three">
-        <div class="econ_mod_lux">
-            <img src="../img/all-star-music-resort.png" alt="All Star Music Resort">
-            <p>Economic</p>
-            <h3>Disney’s All Star Music Resort</h3>
-            <div class="price">
-                <p>$168USD</h3>
+    <div class="card__container">
+        <div class="card card__individual">
+            <img src="../img/all-star-music-resort.png" class="card-img-top" alt="All Stars Music Resort">
+            <div class="card-body card__body">
+                <p> Economic </p>
+                <h3>Disney’s All Star Music Resort</h3>
+                <h4>$168USD</p>
             </div>
         </div>
-        <div class="econ_mod_lux">
-            <img src="../img/port_orleans.png" alt="Port Orleans Resort">
-            <p>Moderate</p>
-            <h3>Disney’s Port Orleans Resort</h3>
-            <div class="price">
-                <p>$403USD</h3>
+        <div class="card card__individual">
+            <img src="../img/port_orleans.png" class="card-img-top" alt="Port Orleans Resort">
+            <div class="card-body card__body">
+                <p> Moderate </p>
+                <h3> Disney’s Port Orleans Resort </h3>
+                <h4> $403USD </h4>
             </div>
         </div>
-        <div class="econ_mod_lux">
-            <img src="../img/polynesian.png" alt="Polynesian Villas Resort">
-            <p>Luxury</p>
-            <h3>Disney’s Polynesian Villas</h3>
-            <div class="price">
-                <p>$1015USD</h3>
+        <div class="card card__individual">
+            <img src="../img/polynesian.png" class="card-img-top" alt="Polynesian Villa Resort">
+            <div class="card-body card__body">
+                <p> Luxury </p>
+                <h3> Disney’s Polynesian Villas </h3>
+                <h4> $1015USD </h4>
             </div>
         </div>
     </div>
-    <!--ends hotel options-->
+    <!--ends hotel cards-->
 
-
-    <div class="more_op">
+    <!--starts more options section-->
+    <div class="more__op">
         <h2>Wish to explore more options?</h2>
-        <div class="button_container">
+        <div class="button__container">
             <button><a
                     href="https://disneyworld.disney.go.com/es-ar/resorts/?ef_id=CjwKCAjwx7GYBhB7EiwA0d8oe7qxmqbKbcwE6DhcDhmSk9nIVreyFGHbZ84q9G-_H8KAFLvDDMG-7hoCE1wQAvD_BwE:G:s&s_kwcid=AL!5071!3!617009320200!e!!g!!disney%20hotels&CMP=KNC-FY22_WDW_TRA_ARG_WB2LA_RES_RSG_Hotels_Resorts|G|5221851.MX.AM.01.03|MOZCG24|BR|617009320200&keyword_id=aud-688965564921:kwd-87842022|dc|disney%20hotels|617009320200|e|5071:3|&gclid=CjwKCAjwx7GYBhB7EiwA0d8oe7qxmqbKbcwE6DhcDhmSk9nIVreyFGHbZ84q9G-_H8KAFLvDDMG-7hoCE1wQAvD_BwE">See
                     more</a></button>
@@ -115,6 +115,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </div>
+    <!-- ends more options section-->
+
+    <!--starts footer-->
     <footer>
         <div class="footer">
             <div class="core__info">
@@ -147,6 +150,7 @@
             </div>
         </div>
     </footer>
+    <!--ends footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -24,6 +24,10 @@
     font-size: 18px;
 }
 
+.navbar__custom {
+    background-color: white;
+}
+
 /*ends nav*/
 
 /*starts main index*/
@@ -170,6 +174,8 @@
     font-weight: bolder;
     font-size: 20px;
     color: #245685;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .final__services {
@@ -248,6 +254,7 @@
 
 
 /*starts parks page*/
+/*starts header parks*/
 .parks__tittle h1 {
     background-image: url(../img/parks.png);
     width: 100%;
@@ -259,6 +266,9 @@
     font-weight: lighter;
 }
 
+/*ends header parks*/
+
+/*starts main parks*/
 .presentation h2 {
     font-family: 'Poppins';
     font-size: 30px;
@@ -291,6 +301,9 @@
     color: #245685;
 }
 
+/*ends main parks*/
+
+/*starts parks cards*/
 .parks {
     display: flex;
     padding: 50px;
@@ -317,23 +330,27 @@
     color: black;
 }
 
-.see_more {
+.see__more {
     padding-bottom: 2px;
     padding-top: 10px;
 }
 
-.see_more button {
+.see__more button {
     background-color: #245685;
     border-style: groove;
     border-color: white;
     width: 90px;
 }
 
-.see_more button a {
+.see__more button a {
     font-family: 'Poppins';
     font-size: 13px;
     color: white;
     text-decoration: none;
+}
+
+.studios ul {
+    margin: 0px;
 }
 
 .pic img {
@@ -341,7 +358,10 @@
     height: 380px;
 }
 
-.water {
+/*ends parks cards*/
+
+/*starts water parks*/
+.container__water {
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 150px;
@@ -350,7 +370,7 @@
     color: #245685;
 }
 
-.water h2 {
+.container__water h2 {
     font-family: 'Poppins';
     font-size: 30px;
     text-align: center;
@@ -359,12 +379,12 @@
     padding-bottom: 50px;
 }
 
-.sun {
+.water__parks {
     display: flex;
     justify-content: center
 }
 
-.both h3 {
+.typhoon__blizzard h3 {
     font-family: 'Poppins';
     font-size: 20px;
     text-align: center;
@@ -373,19 +393,22 @@
     padding-bottom: 20px;
 }
 
-.both img {
+.typhoon__blizzard img {
     width: 700px;
     height: 392px;
 }
 
-.additional_info {
+/*ends water parks*/
+
+/*starts additional info parks*/
+.additional__info {
     padding-left: 350px;
     padding-right: 350px;
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
-.additional_info p {
+.additional__info p {
     font-family: 'Port Lligat Slab';
     text-align: justify;
     color: #245685;
@@ -394,12 +417,12 @@
     text-align: left;
 }
 
+/*ends additional info parks*/
 /*ends parks page*/
 
 
-
 /*starts hotels page*/
-
+/*starts header hotels*/
 .accom h1 {
     font-family: 'Poppins';
     font-size: 40px;
@@ -408,6 +431,9 @@
     border-bottom: solid;
 }
 
+/*ends header hotels*/
+
+/*starts main hotels*/
 .offers {
     display: flex;
     justify-content: space-around
@@ -415,7 +441,6 @@
 
 .offer__container {
     display: flex;
-    width: 900px;
     padding-top: 30px;
 }
 
@@ -429,58 +454,66 @@
     background-color: #ADD4D9;
 }
 
-.tittle_two h2 {
+/*ends main hotels*/
+
+/*starts hotel cards*/
+.tittle__hotels h2 {
     text-align: center;
     font-family: 'Poppins';
-    font-size: 30px;
-    padding: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
     color: #A6775B;
     font-weight: lighter;
 }
 
-.three {
+.card__container {
     display: flex;
-    justify-content: space-evenly
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center
 }
 
-.econ_mod_lux {
-    width: 370px;
-    height: 425px;
-    box-shadow: 10px 10px 8px #888888
+.card__individual {
+    margin-bottom: 20px;
 }
 
-.econ_mod_lux p {
-    text-align: left;
+.card__body p {
     font-family: 'Poppins';
     font-size: 13px;
     color: #A6775B;
+    text-align: left;
     padding-left: 10px;
 }
 
-.econ_mod_lux h3 {
-    text-align: center;
+.card__body h4 {
     font-family: 'Poppins';
-    font-size: 18px;
-    padding: 10px;
+    font-size: 13px;
     color: #A6775B;
-}
-
-.price p {
-    color: #A6775B;
-    font-weight: bold;
     text-align: right;
-    padding-top: 10px;
-    font-family: 'Poppins';
-    font-size: 20px;
     padding-right: 10px;
 }
 
-.more_op {
+.card__body h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    padding: 10px;
+    color: #A6775B;
+    font-weight: bold;
+}
+
+/*ends hotel cards*/
+
+/*starts more options hotel*/
+.more__op {
     padding: 20px;
 }
 
-.more_op h2 {
-    padding-top: 120px;
+.more__op h2 {
+    padding-top: 40px;
     text-align: center;
     font-family: 'Poppins';
     font-size: 30px;
@@ -488,24 +521,25 @@
     color: #A6775B;
 }
 
-.button_container {
+.button__container {
     padding-bottom: 15px;
     padding-top: 15px;
     display: flex;
     justify-content: space-around
 }
 
-.button_container button {
+.button__container button {
     background-color: #245685;
     border-style: groove;
     border-color: white;
     width: 100px;
     height: 40px;
+    border-radius: 40%;
 }
 
-.button_container button a {
+.button__container button a {
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 13px;
     color: white;
     text-decoration: none;
     font-weight: lighter;
@@ -514,13 +548,14 @@
 .argument {
     display: flex;
     justify-content: center;
-    padding-right: 300px;
-    padding-left: 300px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .argument p {
     font-family: 'Poppins';
-    font-size: 20px;
+    font-size: 16px;
     color: #253C59;
     padding: 20px;
     text-align: left;
@@ -531,25 +566,21 @@
 .video {
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 80px;
 }
 
-.video iframe {
-    width: 748px;
-    height: 457px;
-}
-
+/*ends more options hotel*/
 /*ends hotels page*/
 
 
 /*starts news page*/
-
+/*starts header news*/
 .news {
     padding: 30px;
     background-color: #245685;
 }
 
-.news_header h1 {
+.news__header h1 {
     font-family: 'Poppins';
     font-size: 40px;
     color: white;
@@ -557,6 +588,9 @@
     font-weight: lighter;
 }
 
+/*ends header news*/
+
+/*starts main news*/
 .newsNews {
     width: 100%;
     height: 550px;
@@ -565,18 +599,18 @@
     grid-template-rows: auto;
 }
 
-.news_img img {
+.news__img img {
     width: 100%;
     height: 550px;
 }
 
-.news_descrip {
+.news__descrip {
     background-color: #BFCDD9;
     width: 100%;
     height: 550px;
 }
 
-.news_descrip ul li {
+.news__descrip ul li {
     list-style: none;
 }
 
@@ -613,7 +647,7 @@
     font-size: 20px;
 }
 
-.information_news {
+.information__news {
     display: flex;
     text-align: left;
     padding-left: 50px;
@@ -639,7 +673,10 @@
     font-size: 20px;
 }
 
-.more_info {
+/*ends main news*/
+
+/*starts more info news*/
+.more__info {
     display: flex;
     padding-top: 100px;
     padding-left: 100px;
@@ -648,13 +685,13 @@
 
 }
 
-.name {
+.news__name {
     text-align: center;
     height: 500px;
     width: 800px;
 }
 
-.name p {
+.news__name p {
     font-family: 'Poppins';
     font-size: 25px;
     color: white;
@@ -663,18 +700,21 @@
     text-decoration: underline;
 }
 
+/*ends more info news*/
+
+/*starts form news*/
 .container__form {
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
 }
 
-.form {
+.news__form {
     padding: 50px;
     text-align: center;
 }
 
-.form h3 {
+.news__form h3 {
     font-family: 'Poppins';
     font-size: 30px;
     color: #253C59;
@@ -694,6 +734,14 @@
     padding: 10px;
 }
 
+.button__news {
+    padding-top: 10px;
+}
+
+.button__news input {
+    color: #253C59;
+}
+
 .fill p {
     font-family: 'Poppins';
     font-size: 18px;
@@ -706,10 +754,11 @@
     color: #253C59;
 }
 
+/*ends form news*/
 /*ends news page*/
 
 /*starts contact page*/
-
+/*starts black box contact*/
 .contact__container {
     display: flex;
     justify-content: center;
@@ -723,12 +772,12 @@
 
 .box__one {
     background-color: #1E1E1E;
-    height: 800px;
-    width: 800px;
+    width: 350px;
+    height: 950px;
 }
 
 .box__one h2 {
-    font-family: 'Port Lligat Slab';
+    font-family: 'Poppins';
     font-weight: lighter;
     font-size: 20px;
     color: white;
@@ -740,7 +789,7 @@
 }
 
 .box__one h1 {
-    font-family: 'Port Lligat Slab';
+    font-family: 'Poppins';
     font-size: 40px;
     color: white;
     text-align: left;
@@ -763,7 +812,7 @@
 
 .individual p {
     color: white;
-    font-family: 'Port Lligat Slab';
+    font-family: 'Poppins';
     font-weight: lighter;
     font-size: 20px;
 }
@@ -785,7 +834,7 @@
 }
 
 .individual__big input {
-    width: 500px;
+    width: 250px;
     height: 100px;
 }
 
@@ -793,12 +842,56 @@
     padding-top: 20px;
 }
 
+/*ends black box contact*/
+
+/*starts white box contact*/
 .box__two {
-    background-color: white;
-    height: 800px;
-    width: 800px;
+    width: 350px;
+    height: 950px;
+    background-color: #ffffff;
 }
 
+.map iframe {
+    width: 350px;
+    height: 400px;
+    padding-top: 50px;
+}
+
+.box__two h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.box__two p {
+    color: black;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*ends white box contact*/
+/*ends contact page*/
+
+
+/*starts media queries*/
+
+/*starts media index*/
+@media (max-width: 386px) {
+    .core__info ul li {
+        font-size: 10px;
+    }
+
+}
 
 @media (min-width: 768px) {
     .footer {
@@ -815,8 +908,6 @@
     }
 }
 
-
-/*starts media queries*/
 @media (min-width: 923px) {
     .final__services {
         display: grid;
@@ -835,26 +926,25 @@
 @media (min-width: 1200px) {
     .info__img {
         display: flex;
-        align-content: center;
         flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .info__img img {
-        width: 641px;
-        height: 335px;
+        height: 400px;
         padding: 0px;
+        width: 50%;
     }
 
-    .info__pandora{
+    .info__pandora {
         display: contents;
     }
 
     .info__pandora img {
-        width: 578px;
         height: 400px;
         padding: 0px;
     }
-    
+
     .article__one {
         display: flex;
         flex-direction: column;
@@ -864,15 +954,15 @@
         justify-content: center;
     }
 
-    .article__one p{
+    .article__one p {
         padding-left: 20px;
         font-size: 20px;
         font-weight: lighter;
     }
 
-    .article__one h3{
+    .article__one h3 {
         padding-left: 20px;
-    } 
+    }
 
     .article__two {
         display: contents;
@@ -883,36 +973,237 @@
         width: 352px;
         justify-content: center;
         align-items: center
-}
-
-    .article__two h3{
-    font-family: 'Port Lligat Slab';
-    font-size: 25px;
-    color: black;
-    padding-left: 20px;
-    padding-bottom: 20px;
     }
 
-    .info__text{
+    .article__two h3 {
+        font-family: 'Port Lligat Slab';
+        font-size: 25px;
+        color: black;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info__text {
         display: flex;
     }
 
-    .info__button{
+    .info__button {
         display: flex;
         justify-content: center;
-        
-        
-        
     }
-    .info__button button{
+
+    .info__button button {
         color: #ffffff;
         background-color: #245685;
         width: 150px;
         height: 30px;
         border-radius: 40%;
-        
-        
+    }
 
+    .info__home {
+        padding: 20px;
+    }
+
+    .final_section h3 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .img__carousel img {
+        height: 637px;
+    }
+
+    .descrip {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .descrip h2 {
+        font-size: 30px;
+    }
+
+    .descrip h3 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+
+    .info__img img {
+        height: 334px;
+        width: 641px;
+    }
+
+    .info__text {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .info__text {
+        padding: 0px;
+    }
+
+    .article__one {
+        height: 443px;
+        width: 352px;
+    }
+
+    .article__two {
+        height: 443px;
+        width: 352px;
+    }
+
+    .info__pandora img {
+        height: 443px;
+        width: 578px;
+    }
+}
+
+/*ends media index*/
+
+/*starts media hotels*/
+@media (max-width: 330px) {
+    .accom h1 {
+        font-size: 30px;
+    }
+
+    .card__individual {
+        width: 18rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .argument {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .offer__container {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .offer__container {
+        width: 800px;
+    }
+
+    .argument {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .card__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .offer__container {
+        width: 900px;
+    }
+
+    .card__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .argument {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .card__individual {
+        height: 432px;
+        margin: 0px;
+        width: 22rem;
+    }
+
+    .card__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video {
+        padding-bottom: 120px;
+    }
+
+    .video iframe {
+        width: 748px;
+        height: 436px;
+    }
+
+    .tittle_hotels h2 {
+        font-size: 30px;
+    }
+
+    .argument p {
+        font-size: 20px;
+    }
+}
+
+/*ends media hotels*/
+
+/*starts media contact*/
+@media (max-width: 389px) {
+    .box__one {
+        width: 300px;
+    }
+
+    .box__two {
+        width: 300px;
+    }
+
+    .map iframe {
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .box__one {
+        width: 500px;
+    }
+
+    .box__two {
+        width: 500px;
+    }
+
+    .map iframe {
+        align-items: center;
+        width: 500px;
+    }
+
+    .individual__big input {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .box__one {
+        width: 800px;
+    }
+
+    .box__two {
+        width: 800px;
+    }
+
+    .map {
+        width: 800px;
+        display: flex;
+        padding-left: 50px;
+        justify-content: ledt;
+    }
+
+    .individual__big input {
+        width: 650px;
     }
 
 }
