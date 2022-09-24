@@ -4,16 +4,8 @@
     box-sizing: border-box;
 }
 
-/*starts home page*/
-.nav {
-    display: flex;
-    justify-content: space-between
-}
-
-.nav img {
-    padding: 10px;
-}
-
+/*starts index*/
+/*starts nav*/
 .nav__botones ul {
     display: flex;
     padding-top: 60px;
@@ -32,27 +24,29 @@
     font-size: 18px;
 }
 
+/*ends nav*/
+
+/*starts main index*/
 .description h1 {
     text-align: center;
-    padding: 50px;
+    padding: 40px;
     color: #245685;
     font-family: 'Port Lligat Slab';
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .description div {
-    text-align: justify;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 120px;
-    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .descrip h2 {
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 25px;
     color: #245685;
-    font-weight: 7000;
+    font-weight: bold;
 }
 
 .descrip p {
@@ -63,15 +57,73 @@
 
 .descrip h3 {
     font-family: 'Poppins';
-    font-size: 30px;
+    font-size: 25px;
     color: #245685;
     font-weight: lighter;
+    font-weight: bold;
 }
 
+/*ends main index*/
 
+/*starts information index*/
+.info__home {
+    width: 100%;
+    padding-top: 10px;
+}
 
+.info__img img {
+    width: 100%;
+    padding: 15px;
+}
+
+.info__img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article__one {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B80BF;
+    height: 200px;
+    justify-content: center;
+}
+
+.article__one h3 {
+    font-family: 'Port Lligat Slab';
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.article__one p {
+    font-family: 'Port Lligat Slab';
+    font-size: 15px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.info__pandora {
+    display: none;
+}
+
+.info__pandora img {
+    width: 100%;
+    padding: 5px;
+}
+
+.article__two {
+    display: none;
+}
+
+/*ends information index*/
+
+/*starts process steps index*/
 .process {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .get_started {
@@ -109,76 +161,91 @@
     text-align: center;
 }
 
-.final_section {
-    padding: 80px;
-}
+/*ends process steps index*/
 
+/*starts final section index*/
 .final_section h3 {
     text-align: center;
     font-family: 'Port Lligat Slab';
-    font-weight: lighter;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 20px;
     color: #245685;
 }
 
-.services {
+.final__services {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.services {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*ends final section index*/
+
+/*starts footer*/
+.contain__footer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
     background-color: #253C59;
-    display: flex;
-    justify-content: space-between
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .core__info {
-    padding-left: 40px;
-    padding-top: 30px;
+    text-align: center;
 }
 
 .core__info ul li {
     list-style: none;
     color: white;
     font-family: 'Port Lligat Slab';
-    font-size: 15px;
+    font-size: 13px;
     font-weight: lighter;
+    text-align: left;
 }
 
 .follow__us {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .follow__us p {
-    padding-bottom: 10px;
+    margin: 0px;
     color: aliceblue;
     font-family: 'Port Lligat Slab';
-    font-size: 15px;
+    font-size: 13px;
     font-weight: lighter;
 }
 
-.social__media img {
-    padding: 5px;
-}
-
 .payment {
-    padding-right: 40px;
-    padding-top: 30px;
+    padding: 0%;
+    grid-column: 1/3;
+    text-align: center;
 }
 
 .payment p {
     text-align: center;
     color: white;
-    padding-bottom: 10px;
     font-family: 'Port Lligat Slab';
-    font-size: 15px;
+    font-size: 13px;
+    padding-top: 15px;
     font-weight: lighter;
 }
+
+/*ends footer*/
 /*ends home page*/
+
 
 /*starts parks page*/
 .parks__tittle h1 {
@@ -326,6 +393,7 @@
     padding-bottom: 50px;
     text-align: left;
 }
+
 /*ends parks page*/
 
 
@@ -470,17 +538,18 @@
     width: 748px;
     height: 457px;
 }
+
 /*ends hotels page*/
 
 
 /*starts news page*/
 
-.news{
+.news {
     padding: 30px;
     background-color: #245685;
 }
 
-.news_header h1{
+.news_header h1 {
     font-family: 'Poppins';
     font-size: 40px;
     color: white;
@@ -488,7 +557,7 @@
     font-weight: lighter;
 }
 
-.newsNews{
+.newsNews {
     width: 100%;
     height: 550px;
     display: grid;
@@ -496,22 +565,22 @@
     grid-template-rows: auto;
 }
 
-.news_img img{
+.news_img img {
     width: 100%;
     height: 550px;
 }
 
-.news_descrip{
+.news_descrip {
     background-color: #BFCDD9;
     width: 100%;
     height: 550px;
 }
 
-.news_descrip ul li{
+.news_descrip ul li {
     list-style: none;
 }
 
-.tittle h2{
+.tittle h2 {
     font-family: 'Poppins';
     font-size: 30px;
     color: black;
@@ -524,7 +593,7 @@
     text-align: left;
 }
 
-.tittle h3{
+.tittle h3 {
     letter-spacing: -1px;
     font-family: 'Poppins';
     font-size: 30px;
@@ -536,7 +605,7 @@
     text-align: left;
 }
 
-.newsNews p{
+.newsNews p {
     display: flex;
     text-align: left;
     padding: 40px;
@@ -544,7 +613,7 @@
     font-size: 20px;
 }
 
-.information_news{
+.information_news {
     display: flex;
     text-align: left;
     padding-left: 50px;
@@ -554,7 +623,7 @@
     font-weight: lighter;
 }
 
-.newsTwo{
+.newsTwo {
     width: 100%;
     height: 550px;
     display: grid;
@@ -562,83 +631,86 @@
     grid-template-rows: auto;
 }
 
-.newsTwo p{
+.newsTwo p {
     display: flex;
     text-align: left;
     padding: 40px;
     font-family: 'Poppins';
     font-size: 20px;
-    }
+}
 
-    .more_info{
-        display: flex;
-        padding-top: 100px;
-        padding-left: 100px ;
-        padding-right: 100px;
-        background-color: #245685;
-        
-    }
+.more_info {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #245685;
 
-    .name{
-        text-align: center;
-        height: 500px;
-        width: 800px;
-    }
+}
 
-    .name p{
-        font-family: 'Poppins';
-        font-size: 25px;
-        color: white;
-        padding: 50px;
-        font-weight: lighter;
-        text-decoration: underline;
-    }
-.container__form{
+.name {
+    text-align: center;
+    height: 500px;
+    width: 800px;
+}
+
+.name p {
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    font-weight: lighter;
+    text-decoration: underline;
+}
+
+.container__form {
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;
 }
-    .form{
-        padding: 50px;
-        text-align: center;
-    }
 
-    .form h3{
-        font-family: 'Poppins';
-        font-size: 30px;
-        color: #253C59;
-        text-align: center;  
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
+.form {
+    padding: 50px;
+    text-align: center;
+}
 
-    .fill{
-        background-color: #BFCDD9;
-        height: 100px;
-        width: 800px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px;
-    }
+.form h3 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #253C59;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 
-.fill p{
+.fill {
+    background-color: #BFCDD9;
+    height: 100px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.fill p {
     font-family: 'Poppins';
     font-size: 18px;
     color: #253C59;
 }
-    .newsletter{
-        font-family: 'Poppins';
-        font-size: 15px;
-        color: #253C59;
-    }
+
+.newsletter {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #253C59;
+}
 
 /*ends news page*/
 
 /*starts contact page*/
 
-.contact__container{
+.contact__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -649,13 +721,13 @@
     background-color: #D9B4B4;
 }
 
-.box__one{
+.box__one {
     background-color: #1E1E1E;
     height: 800px;
     width: 800px;
 }
 
-.box__one h2{
+.box__one h2 {
     font-family: 'Port Lligat Slab';
     font-weight: lighter;
     font-size: 20px;
@@ -667,7 +739,7 @@
     padding-bottom: 20px;
 }
 
-.box__one h1{
+.box__one h1 {
     font-family: 'Port Lligat Slab';
     font-size: 40px;
     color: white;
@@ -678,85 +750,169 @@
     padding-bottom: 20px;
 }
 
-.form__contacts{
+.form__contacts {
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.individual{
+.individual {
     padding-top: 20px;
     display: flex;
     flex-direction: column
 }
 
-.individual p{
+.individual p {
     color: white;
     font-family: 'Port Lligat Slab';
     font-weight: lighter;
     font-size: 20px;
 }
 
-.individual input{
+.individual input {
     height: 30px;
     width: 200px;
 }
 
-.individual button{   
+.individual button {
     height: 30px;
     width: 50px
 }
 
-.individual__big{
+.individual__big {
     padding-top: 20px;
     display: flex;
     flex-direction: column
 }
 
-.individual__big input{
+.individual__big input {
     width: 500px;
     height: 100px;
 }
 
-.message__send{
+.message__send {
     padding-top: 20px;
 }
 
-.box__two{
+.box__two {
     background-color: white;
     height: 800px;
     width: 800px;
 }
 
-@media (max-width: 763px) { 
-    .container__footer{
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .core__info {
+        padding-top: 20px;
+    }
+
+    .follow__us {
+        padding: 20px;
+    }
+}
+
+
+/*starts media queries*/
+@media (min-width: 923px) {
+    .final__services {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media (min-width: 1051px) {
+    .steps {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info__img {
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .info__img img {
+        width: 641px;
+        height: 335px;
+        padding: 0px;
+    }
+
+    .info__pandora{
+        display: contents;
+    }
+
+    .info__pandora img {
+        width: 578px;
+        height: 400px;
+        padding: 0px;
+    }
+    
+    .article__one {
+        display: flex;
+        flex-direction: column;
+        background-color: #1B80BF;
+        height: 400px;
+        width: 352px;
+        justify-content: center;
+    }
+
+    .article__one p{
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+    .article__one h3{
+        padding-left: 20px;
+    } 
+
+    .article__two {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        background-color: #FAEAD0;
+        height: 400px;
+        width: 352px;
+        justify-content: center;
+        align-items: center
+}
+
+    .article__two h3{
+    font-family: 'Port Lligat Slab';
+    font-size: 25px;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    }
+
+    .info__text{
         display: flex;
     }
-    .footer{
-        width: 100%;
-        display: grid;
+
+    .info__button{
+        display: flex;
         justify-content: center;
-        grid-template-columns: 50% 50%;
+        
+        
+        
     }
-    .payment{
-        text-align: center;
-        padding: 0px;
-        grid-column: 1/3;
+    .info__button button{
+        color: #ffffff;
+        background-color: #245685;
+        width: 150px;
+        height: 30px;
+        border-radius: 40%;
+        
+        
+
     }
-    .core__info{
-        padding: 0px;
-        text-align: center;
-    }
-    .core__info ul{
-        padding: 0px;
-        text-align: center;
-    }
-    .follow__us{
-        text-align: center;
-        padding: 0px;
-    }
- }
- @media (max-width: 550px) { 
-    .descrip h2{
-        font-size: 2rem;
-    }
- }
+
+}
