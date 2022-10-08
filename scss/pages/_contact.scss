@@ -1,0 +1,115 @@
+/*starts black box*/
+
+.contact__container {
+    @include flexWrap;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    background-color: #D9B4B4;
+}
+
+.box__one {
+    background-color: #1E1E1E;
+    width: 350px;
+    height: 950px;
+
+    h2 {
+        font-family: $font-primary;
+        font-weight: lighter;
+        font-size: 20px;
+        color: $font-color;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 70px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-family: $font-primary;
+        font-size: 40px;
+        color: $font-color;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 5px;
+        padding-right: 50px;
+        padding-bottom: 5px;
+        margin: 0px;
+    }
+}
+
+.form__contacts {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.individual {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        color: $font-color;
+        font-family: $font-primary;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+    }
+}
+
+.individual__big {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 250px;
+        height: 100px;
+    }
+}
+
+/*ends black box*/
+
+/*starts white box*/
+
+.box__two {
+    width: 350px;
+    height: 950px;
+    background-color: $font-color;
+
+    h3 {
+        font-family: $font-primary;
+        font-size: 20px;
+        color: black;
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 70px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    p {
+        color: black;
+        font-family: $font-primary;
+        font-weight: lighter;
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.map iframe {
+    width: 350px;
+    height: 400px;
+    padding-top: 50px;
+}
+
+/*ends white box*/

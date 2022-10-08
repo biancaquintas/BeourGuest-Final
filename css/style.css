@@ -1,783 +1,798 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/*starts index*/
-/*starts nav*/
-.nav__botones ul {
-    display: flex;
-    padding-top: 60px;
-    padding-right: 100px;
-}
-
-.nav__botones ul li {
-    padding: 20px;
-    list-style: none;
-}
-
-.nav__botones ul li a {
-    color: #B81F24;
-    text-decoration: none;
-    font-family: 'Poppins';
-    font-size: 18px;
-}
-
-.navbar__custom {
-    background-color: white;
-}
-
-/*ends nav*/
-
-/*starts main index*/
-.description h1 {
-    text-align: center;
-    padding: 40px;
-    color: #245685;
-    font-family: 'Port Lligat Slab';
-    font-size: 30px;
-}
-
-.description div {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.descrip h2 {
-    font-family: 'Poppins';
-    font-size: 25px;
-    color: #245685;
-    font-weight: bold;
-}
-
-.descrip p {
-    font-family: 'Poppins';
-    font-size: 20px;
-    color: #245685;
-}
-
-.descrip h3 {
-    font-family: 'Poppins';
-    font-size: 25px;
-    color: #245685;
-    font-weight: lighter;
-    font-weight: bold;
-}
-
-/*ends main index*/
-
-/*starts information index*/
-.info__home {
-    width: 100%;
-    padding-top: 10px;
-}
-
-.info__img img {
-    width: 100%;
-    padding: 15px;
-}
-
-.info__img {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.article__one {
-    display: flex;
-    flex-direction: column;
-    background-color: #1B80BF;
-    height: 200px;
-    justify-content: center;
-}
-
-.article__one h3 {
-    font-family: 'Port Lligat Slab';
-    font-size: 25px;
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 10px;
-}
-
-.article__one p {
-    font-family: 'Port Lligat Slab';
-    font-size: 15px;
-    color: white;
-    padding-left: 50px;
-    padding-right: 10px;
-}
-
-.info__pandora {
-    display: none;
-}
-
-.info__pandora img {
-    width: 100%;
-    padding: 5px;
-}
-
-.article__two {
-    display: none;
-}
-
-/*ends information index*/
-
-/*starts process steps index*/
-.process {
-    padding-top: 50px;
-}
-
-.get_started {
-    background-color: #FAEAD0;
-    padding: 20px;
-}
-
-.get_started h2 {
-    font-family: 'Poppins';
-    font-size: 30px;
-    text-align: center;
-    color: #245685;
-    font-weight: lighter;
-}
-
-.steps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-top: 50px;
-    padding-bottom: 70px;
-}
-
-.numbers {
-    display: grid;
-    justify-items: center;
-}
-
-.numbers p {
-    font-family: 'Port Lligat Slab';
-    font-size: 25px;
-    color: #245685;
-    text-align: center;
-}
-
-/*ends process steps index*/
-
-/*starts final section index*/
-.final_section h3 {
-    text-align: center;
-    font-family: 'Port Lligat Slab';
-    font-weight: bolder;
-    font-size: 20px;
-    color: #245685;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.final__services {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 70px;
-    flex-wrap: wrap;
-    justify-content: space-evenly
-}
-
-.services {
-    padding: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-}
-
-/*ends final section index*/
-
-/*starts footer*/
-.contain__footer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer {
-    background-color: #253C59;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.core__info {
-    text-align: center;
-}
-
-.core__info ul li {
-    list-style: none;
-    color: white;
-    font-family: 'Port Lligat Slab';
-    font-size: 13px;
-    font-weight: lighter;
-    text-align: left;
-}
-
-.follow__us {
-    text-align: center;
-}
-
-.follow__us p {
-    margin: 0px;
-    color: aliceblue;
-    font-family: 'Port Lligat Slab';
-    font-size: 13px;
-    font-weight: lighter;
-}
-
-.payment {
-    padding: 0%;
-    grid-column: 1/3;
-    text-align: center;
-}
-
-.payment p {
-    text-align: center;
-    color: white;
-    font-family: 'Port Lligat Slab';
-    font-size: 13px;
-    padding-top: 15px;
-    font-weight: lighter;
-}
-
-/*ends footer*/
-/*ends home page*/
-
-
-/*starts parks page*/
-/*starts header parks*/
-.parks__tittle h1 {
-    background-image: url(../img/parks.png);
-    width: 100%;
-    height: 500px;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 40px;
-    text-align: center;
-    font-weight: lighter;
-}
-
-/*ends header parks*/
-
-/*starts main parks*/
-.presentation h2 {
-    font-family: 'Poppins';
-    font-size: 30px;
-    text-align: center;
-    color: #245685;
-    font-weight: lighter;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.info h3 {
-    font-family: 'Poppins';
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    font-weight: lighter;
-    background-color: #A24CE8;
-    padding: 20px;
-}
-
-.info {
-    display: flex;
-    align-content: center;
-    height: 100px;
-    padding-right: 120px;
-    padding-left: 120px;
-    border-bottom: solid;
-    color: #245685;
-}
-
-/*ends main parks*/
-
-/*starts parks cards*/
-.parks {
-    display: flex;
-    padding: 50px;
-    justify-content: center
-}
-
-.studios {
-    background-color: #FAEAD0;
-    width: 500px;
-    height: 380px;
-    text-align: center;
-    padding: 20px;
-    list-style-position: inside;
-}
-
-.counting li {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 1px;
-    font-family: 'Poppins';
-    font-size: 18px;
-    color: black;
-}
-
-.see__more {
-    padding-bottom: 2px;
-    padding-top: 10px;
-}
-
-.see__more button {
-    background-color: #245685;
-    border-style: groove;
-    border-color: white;
-    width: 90px;
-}
-
-.see__more button a {
-    font-family: 'Poppins';
-    font-size: 13px;
-    color: white;
-    text-decoration: none;
-}
-
-.studios ul {
-    margin: 0px;
-}
-
-.pic img {
-    width: 500px;
-    height: 380px;
-}
-
-/*ends parks cards*/
-
-/*starts water parks*/
-.container__water {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    border-top: solid;
-    color: #245685;
-}
-
-.container__water h2 {
-    font-family: 'Poppins';
-    font-size: 30px;
-    text-align: center;
-    color: #245685;
-    font-weight: 500;
-    padding-bottom: 50px;
-}
-
-.water__parks {
-    display: flex;
-    justify-content: center
-}
-
-.typhoon__blizzard h3 {
-    font-family: 'Poppins';
-    font-size: 20px;
-    text-align: center;
-    color: #245685;
-    font-weight: 500;
-    padding-bottom: 20px;
-}
-
-.typhoon__blizzard img {
-    width: 700px;
-    height: 392px;
-}
-
-/*ends water parks*/
-
-/*starts additional info parks*/
-.additional__info {
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.additional__info p {
-    font-family: 'Port Lligat Slab';
-    text-align: justify;
-    color: #245685;
-    font-size: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-}
-
-/*ends additional info parks*/
-/*ends parks page*/
-
-
-/*starts hotels page*/
-/*starts header hotels*/
-.accom h1 {
-    font-family: 'Poppins';
-    font-size: 40px;
-    text-align: center;
-    color: #245685;
-    border-bottom: solid;
-}
-
-/*ends header hotels*/
-
-/*starts main hotels*/
-.offers {
-    display: flex;
-    justify-content: space-around
-}
-
-.offer__container {
-    display: flex;
-    padding-top: 30px;
-}
-
-.offers p {
-    padding: 20px;
-    font-family: 'Poppins';
-    font-size: 20px;
-    text-align: center;
-    color: #253C59;
-    font-weight: 500;
-    background-color: #ADD4D9;
-}
-
-/*ends main hotels*/
-
-/*starts hotel cards*/
-.tittle__hotels h2 {
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 20px;
-    padding-left: 20px;
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    color: #A6775B;
-    font-weight: lighter;
-}
-
-.card__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center
-}
-
-.card__individual {
-    margin-bottom: 20px;
-}
-
-.card__body p {
-    font-family: 'Poppins';
-    font-size: 13px;
-    color: #A6775B;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.card__body h4 {
-    font-family: 'Poppins';
-    font-size: 13px;
-    color: #A6775B;
-    text-align: right;
-    padding-right: 10px;
-}
-
-.card__body h3 {
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 15px;
-    padding: 10px;
-    color: #A6775B;
-    font-weight: bold;
-}
-
-/*ends hotel cards*/
-
-/*starts more options hotel*/
-.more__op {
-    padding: 20px;
-}
-
-.more__op h2 {
-    padding-top: 40px;
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 30px;
-    font-weight: 500;
-    color: #A6775B;
-}
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0; }
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent; }
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline; }
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none; }
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none; }
+
+/*Colores*/
+/*buttons hotel page*/
 .button__container {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    display: flex;
-    justify-content: space-around
-}
-
-.button__container button {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around; }
+  .button__container button {
     background-color: #245685;
     border-style: groove;
     border-color: white;
     width: 100px;
     height: 40px;
-    border-radius: 40%;
-}
-
-.button__container button a {
-    font-family: 'Poppins';
+    border-radius: 40%; }
+  .button__container a {
+    font-family: #245685;
     font-size: 13px;
     color: white;
     text-decoration: none;
+    font-weight: lighter; }
+
+/*buttons contact*/
+.message__send {
+  padding-top: 20px; }
+  .message__send button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; }
+  .message__send button:hover {
+    background-color: #d44c80;
+    box-shadow: 0px 15px 20px rgba(229, 46, 180, 0.4);
+    color: #fff;
+    transform: translateY(-7px); }
+  .message__send button:active {
+    transform: translateY(-1px); }
+
+/*buttons parks*/
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+  /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0E1822;
+  padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #0E1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1; }
+  .primary-button a {
+    text-decoration: none;
+    color: white; }
+
+.primary-button:hover {
+  border: 1px solid #FF4655;
+  color: white;
+  background-position: 40%; }
+
+.primary-button:before {
+  content: "";
+  position: absolute;
+  background-color: #0E1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out; }
+
+.primary-button:hover:before {
+  background-color: white; }
+
+.primary-button:hover:after {
+  background-color: white; }
+
+.primary-button:after {
+  content: "";
+  position: absolute;
+  background-color: #FF4655;
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out; }
+
+.button-borders {
+  position: relative;
+  width: fit-content;
+  height: fit-content; }
+
+.button-borders:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  top: -0.3em;
+  border: 1px solid #0E1822;
+  border-bottom: 0px;
+  /* opacity: 0.3; */ }
+
+.button-borders:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  bottom: -0.3em;
+  border: 1px solid #0E1822;
+  border-top: 0px;
+  /* opacity: 0.3; */
+  z-index: 0; }
+
+.shape {
+  fill: #0E1822; }
+
+/*buttons news*/
+.fill__button {
+  display: flex;
+  flex-direction: end; }
+
+.news__button {
+  border: none;
+  background: none; }
+
+.news__button span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase; }
+
+.news__button svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease; }
+
+.news__button:hover svg {
+  transform: translateX(0); }
+
+.news__button:active svg {
+  transform: scale(0.9); }
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px; }
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.news__button:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.nav__botones ul {
+  display: flex;
+  padding-top: 60px;
+  padding-right: 100px; }
+  .nav__botones ul li {
+    padding: 20px;
+    list-style: none; }
+    .nav__botones ul li a {
+      color: #B81F24;
+      text-decoration: none;
+      font-family: "Poppins";
+      font-size: 18px; }
+
+.navbar__custom {
+  background-color: white; }
+
+.contain__footer {
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer {
+  background-color: #253C59;
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.core__info {
+  text-align: center; }
+  .core__info ul li {
+    list-style: none;
+    color: white;
+    font-family: "Port Lligat Slab";
+    font-size: 13px;
     font-weight: lighter;
-}
+    text-align: left; }
 
+.follow__us {
+  text-align: center; }
+  .follow__us p {
+    margin: 0px;
+    color: aliceblue;
+    font-family: "Port Lligat Slab";
+    font-size: 13px;
+    font-weight: lighter; }
+
+.payment {
+  padding: 0%;
+  grid-column: 1/3;
+  text-align: center; }
+  .payment p {
+    text-align: center;
+    color: white;
+    font-family: "Port Lligat Slab";
+    font-size: 13px;
+    padding-top: 15px;
+    font-weight: lighter; }
+
+/*starts main*/
+.description h1 {
+  text-align: center;
+  padding: 40px;
+  color: #245685;
+  font-size: 30px;
+  font-family: "Port Lligat Slab";
+  margin: 0px; }
+
+.description .descrip {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .description .descrip h2 {
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: #245685; }
+  .description .descrip p {
+    font-family: "Poppins";
+    font-size: 15px;
+    color: #245685; }
+  .description .descrip h3 {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: #245685; }
+
+/*ends main*/
+/*starts information*/
+.info__home {
+  width: 100%;
+  padding-top: 10px; }
+
+.info__img {
+  display: flex;
+  flex-wrap: wrap; }
+  .info__img img {
+    width: 100%;
+    padding: 15px; }
+
+.article__one {
+  display: flex;
+  flex-direction: column;
+  background-color: #1B80BF;
+  height: 200px;
+  justify-content: center; }
+  .article__one h3 {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: white;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 10px; }
+  .article__one p {
+    font-family: "Port Lligat Slab";
+    font-size: 15px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 10px; }
+
+.info__pandora {
+  display: none; }
+  .info__pandora img {
+    width: 100%;
+    padding: 5px; }
+
+.article__two {
+  display: none; }
+
+/*ends information*/
+/*starts process steps*/
+.process {
+  padding-top: 50px; }
+
+.get_started {
+  background-color: #FAEAD0;
+  padding: 20px; }
+  .get_started h2 {
+    font-family: "Poppins";
+    font-size: 30px;
+    text-align: center;
+    color: #245685;
+    font-weight: lighter; }
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 50px;
+  padding-bottom: 70px; }
+
+.numbers {
+  display: grid;
+  justify-items: center; }
+  .numbers p {
+    font-family: "Port Lligat Slab";
+    font-size: 25px;
+    color: #245685;
+    text-align: center; }
+
+/*ends process steps*/
+/*starts final section*/
+.final_section h3 {
+  text-align: center;
+  font-family: "Port Lligat Slab";
+  font-weight: bolder;
+  font-size: 20px;
+  color: #245685;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.final__services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  justify-content: space-evenly; }
+
+.services {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+/*ends final section*/
+/*starts header*/
+.accom h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 40px;
+  color: #245685;
+  border-bottom: solid; }
+
+/*ends header*/
+/*starts main*/
+.offer__container {
+  display: flex;
+  padding-top: 30px; }
+
+.offers {
+  display: flex;
+  justify-content: space-around; }
+  .offers p {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Poppins";
+    color: #253C59;
+    font-weight: 500;
+    background-color: #ADD4D9; }
+
+/*ends main*/
+/*starts cards*/
+.tittle__hotels h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  color: #A6775B;
+  font-weight: lighter; }
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center; }
+
+.card__individual {
+  margin-bottom: 20px; }
+
+.card__body p {
+  font-family: "Poppins";
+  font-size: 13px;
+  color: #A6775B;
+  text-align: left;
+  padding-left: 10px; }
+
+.card__body h4 {
+  font-family: "Poppins";
+  font-size: 13px;
+  color: #A6775B;
+  text-align: right;
+  padding-right: 10px; }
+
+.card__body h3 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 15px;
+  padding: 10px;
+  color: #A6775B;
+  font-weight: bold; }
+
+/*ends cards*/
+/*starts more options*/
+.more__op {
+  padding: 20px; }
+  .more__op h2 {
+    padding-top: 40px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 500;
+    color: #A6775B; }
+
+/*button*/
 .argument {
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-}
-
-.argument p {
-    font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px; }
+  .argument p {
+    font-family: "Poppins";
     font-size: 16px;
     color: #253C59;
     padding: 20px;
     text-align: left;
     border-style: dotted;
-    border-color: #A6775B;
-}
+    border-color: #A6775B; }
 
 .video {
-    display: flex;
-    justify-content: center;
-    padding: 80px;
-}
+  display: flex;
+  justify-content: center;
+  padding: 80px; }
 
-/*ends more options hotel*/
-/*ends hotels page*/
-
-
-/*starts news page*/
-/*starts header news*/
-.news {
-    padding: 30px;
-    background-color: #245685;
-}
-
-.news__header h1 {
-    font-family: 'Poppins';
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    font-weight: lighter;
-}
-
-/*ends header news*/
-
-/*starts main news*/
-.newsNews {
-    width: 100%;
-    height: 550px;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-}
-
-.news__img img {
-    width: 100%;
-    height: 550px;
-}
-
-.news__descrip {
-    background-color: #BFCDD9;
-    width: 100%;
-    height: 550px;
-}
-
-.news__descrip ul li {
-    list-style: none;
-}
-
-.tittle h2 {
-    font-family: 'Poppins';
-    font-size: 30px;
-    color: black;
-    font-weight: lighter;
-    padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    letter-spacing: -1px;
-    display: flex;
-    text-align: left;
-}
-
-.tittle h3 {
-    letter-spacing: -1px;
-    font-family: 'Poppins';
-    font-size: 30px;
-    color: black;
-    font-weight: lighter;
-    padding-left: 50px;
-    padding-right: 50px;
-    display: flex;
-    text-align: left;
-}
-
-.newsNews p {
-    display: flex;
-    text-align: left;
-    padding: 40px;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
-
-.information__news {
-    display: flex;
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.newsTwo {
-    width: 100%;
-    height: 550px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-}
-
-.newsTwo p {
-    display: flex;
-    text-align: left;
-    padding: 40px;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
-
-/*ends main news*/
-
-/*starts more info news*/
-.more__info {
-    display: flex;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: #245685;
-
-}
-
-.news__name {
-    text-align: center;
-    height: 500px;
-    width: 800px;
-}
-
-.news__name p {
-    font-family: 'Poppins';
-    font-size: 25px;
-    color: white;
-    padding: 50px;
-    font-weight: lighter;
-    text-decoration: underline;
-}
-
-/*ends more info news*/
-
-/*starts form news*/
-.container__form {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-}
-
-.news__form {
-    padding: 50px;
-    text-align: center;
-}
-
-.news__form h3 {
-    font-family: 'Poppins';
-    font-size: 30px;
-    color: #253C59;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.fill {
-    background-color: #BFCDD9;
-    height: 100px;
-    width: 800px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.button__news {
-    padding-top: 10px;
-}
-
-.button__news input {
-    color: #253C59;
-}
-
-.fill p {
-    font-family: 'Poppins';
-    font-size: 18px;
-    color: #253C59;
-}
-
-.newsletter {
-    font-family: 'Poppins';
-    font-size: 15px;
-    color: #253C59;
-}
-
-/*ends form news*/
-/*ends news page*/
-
-/*starts contact page*/
-/*starts black box contact*/
+/*ends more options*/
+/*starts black box*/
 .contact__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 100px;
-    background-color: #D9B4B4;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  background-color: #D9B4B4; }
 
 .box__one {
-    background-color: #1E1E1E;
-    width: 350px;
-    height: 950px;
-}
-
-.box__one h2 {
-    font-family: 'Poppins';
+  background-color: #1E1E1E;
+  width: 350px;
+  height: 950px; }
+  .box__one h2 {
+    font-family: "Poppins";
     font-weight: lighter;
     font-size: 20px;
     color: white;
@@ -785,80 +800,51 @@
     padding-left: 50px;
     padding-top: 70px;
     padding-right: 50px;
-    padding-bottom: 20px;
-}
-
-.box__one h1 {
-    font-family: 'Poppins';
+    padding-bottom: 20px; }
+  .box__one h1 {
+    font-family: "Poppins";
     font-size: 40px;
     color: white;
     text-align: left;
     padding-left: 50px;
     padding-top: 5px;
     padding-right: 50px;
-    padding-bottom: 20px;
-}
+    padding-bottom: 5px;
+    margin: 0px; }
 
 .form__contacts {
-    padding-left: 50px;
-    padding-right: 50px;
-}
+  padding-left: 50px;
+  padding-right: 50px; }
 
 .individual {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column
-}
-
-.individual p {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  .individual p {
     color: white;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: lighter;
-    font-size: 20px;
-}
-
-.individual input {
+    font-size: 20px; }
+  .individual input {
     height: 30px;
-    width: 200px;
-}
-
-.individual button {
-    height: 30px;
-    width: 50px
-}
+    width: 200px; }
 
 .individual__big {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column
-}
-
-.individual__big input {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column; }
+  .individual__big input {
     width: 250px;
-    height: 100px;
-}
+    height: 100px; }
 
-.message__send {
-    padding-top: 20px;
-}
-
-/*ends black box contact*/
-
-/*starts white box contact*/
+/*ends black box*/
+/*starts white box*/
 .box__two {
-    width: 350px;
-    height: 950px;
-    background-color: #ffffff;
-}
-
-.map iframe {
-    width: 350px;
-    height: 400px;
-    padding-top: 50px;
-}
-
-.box__two h3 {
-    font-family: 'Poppins';
+  width: 350px;
+  height: 950px;
+  background-color: white; }
+  .box__two h3 {
+    font-family: "Poppins";
     font-size: 20px;
     color: black;
     text-align: left;
@@ -867,343 +853,488 @@
     padding-right: 50px;
     padding-bottom: 20px;
     font-weight: bold;
-    text-decoration: underline;
-}
-
-.box__two p {
+    text-decoration: underline; }
+  .box__two p {
     color: black;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: lighter;
     font-size: 20px;
     padding-left: 50px;
-    padding-right: 50px;
-}
+    padding-right: 50px; }
 
-/*ends white box contact*/
-/*ends contact page*/
+.map iframe {
+  width: 350px;
+  height: 400px;
+  padding-top: 50px; }
 
+/*ends white box*/
+/*starts header*/
+.news {
+  padding: 30px;
+  background-color: #245685; }
+  .news h1 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    color: white;
+    font-weight: lighter; }
 
+/*ends header*/
+/*starts main*/
+.newsNews {
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto; }
+  .newsNews p {
+    display: flex;
+    font-family: "Poppins";
+    text-align: left;
+    padding: 40px;
+    font-size: 20px; }
+
+.news__img img {
+  width: 100%;
+  height: 550px; }
+
+.news__descrip {
+  background-color: #BFCDD9;
+  width: 100%;
+  height: 550px; }
+  .news__descrip ul li {
+    list-style: none; }
+
+.tittle h2 {
+  display: flex;
+  font-family: "Poppins";
+  text-align: left;
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: -1px; }
+
+.tittle h3 {
+  letter-spacing: -1px;
+  display: flex;
+  font-family: "Poppins";
+  text-align: left;
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.information__news {
+  display: flex;
+  font-family: "Poppins";
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  font-weight: lighter; }
+
+.newsTwo {
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto; }
+  .newsTwo p {
+    padding: 40px;
+    display: flex;
+    font-family: "Poppins";
+    text-align: left;
+    font-size: 20px; }
+
+/*ends main*/
+/*starts more info*/
+.more__info {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #245685; }
+
+.news__name {
+  text-align: center;
+  height: 500px;
+  width: 800px; }
+  .news__name p {
+    font-family: "Poppins";
+    font-size: 25px;
+    color: white;
+    padding: 50px;
+    font-weight: lighter;
+    text-decoration: underline; }
+
+/*ends more info*/
+/*starts form*/
+.container__form {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px; }
+
+.news__form {
+  padding: 50px;
+  text-align: center; }
+  .news__form h3 {
+    font-size: 30px;
+    color: #253C59;
+    text-align: center;
+    font-family: "Poppins";
+    padding-bottom: 20px;
+    padding-top: 20px; }
+
+.fill {
+  background-color: #BFCDD9;
+  height: 100px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px; }
+  .fill p {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #253C59; }
+
+.form__fill {
+  text-align: left;
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #253C59; }
+
+/*ends form*/
+/*starts header*/
+.parks__tittle h1 {
+  background-image: url(../img/parks.png);
+  width: 100%;
+  height: 500px;
+  color: white;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: lighter; }
+
+/*ends header*/
+/*starts main*/
+.presentation h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Poppins";
+  color: #245685;
+  font-weight: lighter;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px; }
+
+.info {
+  display: flex;
+  align-content: center;
+  height: 100px;
+  padding-right: 120px;
+  padding-left: 120px;
+  border-bottom: solid;
+  color: #245685; }
+  .info h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    background-color: #A24CE8;
+    padding: 20px; }
+
+/*ends main*/
+/*starts cards*/
+.parks {
+  display: flex;
+  padding: 50px;
+  justify-content: center; }
+
+.studios {
+  background-color: #FAEAD0;
+  width: 500px;
+  height: 380px;
+  text-align: center;
+  padding: 20px;
+  list-style-position: inside; }
+  .studios ul {
+    margin: 0px; }
+
+.counting li {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: black; }
+
+.pic img {
+  width: 500px;
+  height: 380px; }
+
+/*ends cards*/
+/*starts water parks*/
+.container__water {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-top: solid;
+  color: #245685; }
+  .container__water h2 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 30px;
+    color: #245685;
+    font-weight: 500;
+    padding-bottom: 50px; }
+
+.water__parks {
+  display: flex;
+  justify-content: center; }
+
+.typhoon__blizzard h3 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #245685;
+  font-weight: 500;
+  padding-bottom: 20px; }
+
+.typhoon__blizzard img {
+  width: 700px;
+  height: 392px; }
+
+/*ends water parks*/
+/*starts add info*/
+.additional__info {
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+  .additional__info p {
+    font-family: "Port Lligat Slab";
+    text-align: justify;
+    color: #245685;
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: left; }
+
+/*ends add info*/
 /*starts media queries*/
-
-/*starts media index*/
+/*starts media home*/
 @media (max-width: 386px) {
-    .core__info ul li {
-        font-size: 10px;
-    }
-
-}
+  .core__info ul li {
+    font-size: 10px; } }
 
 @media (min-width: 768px) {
-    .footer {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .core__info {
-        padding-top: 20px;
-    }
-
-    .follow__us {
-        padding: 20px;
-    }
-}
+  .footer {
+    display: flex;
+    justify-content: space-evenly; }
+  .core__info {
+    padding-top: 20px; }
+  .follow__us {
+    padding: 20px; } }
 
 @media (min-width: 923px) {
-    .final__services {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-}
+  .final__services {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; } }
 
 @media (min-width: 1051px) {
-    .steps {
-        display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
+  .steps {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media (min-width: 1200px) {
-    .info__img {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .info__img img {
-        height: 400px;
-        padding: 0px;
-        width: 50%;
-    }
-
-    .info__pandora {
-        display: contents;
-    }
-
-    .info__pandora img {
-        height: 400px;
-        padding: 0px;
-    }
-
-    .article__one {
-        display: flex;
-        flex-direction: column;
-        background-color: #1B80BF;
-        height: 400px;
-        width: 352px;
-        justify-content: center;
-    }
-
-    .article__one p {
-        padding-left: 20px;
-        font-size: 20px;
-        font-weight: lighter;
-    }
-
-    .article__one h3 {
-        padding-left: 20px;
-    }
-
-    .article__two {
-        display: contents;
-        display: flex;
-        flex-direction: column;
-        background-color: #FAEAD0;
-        height: 400px;
-        width: 352px;
-        justify-content: center;
-        align-items: center
-    }
-
-    .article__two h3 {
-        font-family: 'Port Lligat Slab';
-        font-size: 25px;
-        color: black;
-        padding-left: 20px;
-        padding-bottom: 20px;
-    }
-
-    .info__text {
-        display: flex;
-    }
-
-    .info__button {
-        display: flex;
-        justify-content: center;
-    }
-
-    .info__button button {
-        color: #ffffff;
-        background-color: #245685;
-        width: 150px;
-        height: 30px;
-        border-radius: 40%;
-    }
-
-    .info__home {
-        padding: 20px;
-    }
-
-    .final_section h3 {
-        font-size: 30px;
-    }
-}
+  .info__img {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; }
+  .info__img img {
+    height: 400px;
+    padding: 0px;
+    width: 50%; }
+  .info__pandora {
+    display: contents; }
+  .info__pandora img {
+    height: 400px;
+    padding: 0px; }
+  .article__one {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B80BF;
+    height: 400px;
+    width: 352px;
+    justify-content: center; }
+  .article__one p {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: lighter; }
+  .article__one h3 {
+    padding-left: 20px; }
+  .article__two {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAEAD0;
+    height: 400px;
+    width: 352px;
+    justify-content: center;
+    align-items: center; }
+  .article__two h3 {
+    font-family: 'Port Lligat Slab';
+    font-size: 25px;
+    color: black;
+    padding-left: 20px;
+    padding-bottom: 20px; }
+  .info__text {
+    display: flex; }
+  .info__button {
+    display: flex;
+    justify-content: center; }
+  .info__button button {
+    color: #ffffff;
+    background-color: #245685;
+    width: 150px;
+    height: 30px;
+    border-radius: 40%; }
+  .info__home {
+    padding: 20px; }
+  .final_section h3 {
+    font-size: 30px; } }
 
 @media (min-width: 1400px) {
-    .img__carousel img {
-        height: 637px;
-    }
+  .img__carousel img {
+    height: 637px; }
+  .descrip {
+    margin-left: 150px;
+    margin-right: 150px; }
+  .descrip h2 {
+    font-size: 30px; }
+  .descrip h3 {
+    font-size: 30px;
+    font-weight: lighter; }
+  .info__img img {
+    height: 334px;
+    width: 641px; }
+  .info__text {
+    display: flex;
+    justify-content: center;
+    padding: 0px; }
+  .info__text {
+    padding: 0px; }
+  .article__one {
+    height: 443px;
+    width: 352px; }
+  .article__two {
+    height: 443px;
+    width: 352px; }
+  .info__pandora img {
+    height: 443px;
+    width: 578px; } }
 
-    .descrip {
-        margin-left: 150px;
-        margin-right: 150px;
-    }
-
-    .descrip h2 {
-        font-size: 30px;
-    }
-
-    .descrip h3 {
-        font-size: 30px;
-        font-weight: lighter;
-    }
-
-    .info__img img {
-        height: 334px;
-        width: 641px;
-    }
-
-    .info__text {
-        display: flex;
-        justify-content: center;
-        padding: 0px;
-    }
-
-    .info__text {
-        padding: 0px;
-    }
-
-    .article__one {
-        height: 443px;
-        width: 352px;
-    }
-
-    .article__two {
-        height: 443px;
-        width: 352px;
-    }
-
-    .info__pandora img {
-        height: 443px;
-        width: 578px;
-    }
-}
-
-/*ends media index*/
-
+/*ends media home*/
 /*starts media hotels*/
 @media (max-width: 330px) {
-    .accom h1 {
-        font-size: 30px;
-    }
-
-    .card__individual {
-        width: 18rem;
-    }
-}
+  .accom h1 {
+    font-size: 30px; }
+  .card__individual {
+    width: 18rem; } }
 
 @media (min-width: 768px) {
-    .argument {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
-    .offer__container {
-        width: 600px;
-    }
-}
+  .argument {
+    padding-left: 80px;
+    padding-right: 80px; }
+  .offer__container {
+    width: 600px; } }
 
 @media (min-width: 992px) {
-    .offer__container {
-        width: 800px;
-    }
-
-    .argument {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .card__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
+  .offer__container {
+    width: 800px; }
+  .argument {
+    padding-left: 100px;
+    padding-right: 100px; }
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 @media (min-width: 1400px) {
-    .offer__container {
-        width: 900px;
-    }
-
-    .card__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
-    .argument {
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    .card__individual {
-        height: 432px;
-        margin: 0px;
-        width: 22rem;
-    }
-
-    .card__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .video {
-        padding-bottom: 120px;
-    }
-
-    .video iframe {
-        width: 748px;
-        height: 436px;
-    }
-
-    .tittle_hotels h2 {
-        font-size: 30px;
-    }
-
-    .argument p {
-        font-size: 20px;
-    }
-}
+  .offer__container {
+    width: 900px; }
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 80px;
+    padding-right: 80px; }
+  .argument {
+    padding-left: 200px;
+    padding-right: 200px; }
+  .card__individual {
+    height: 432px;
+    margin: 0px;
+    width: 22rem; }
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .video {
+    padding-bottom: 120px; }
+  .video iframe {
+    width: 748px;
+    height: 436px; }
+  .tittle_hotels h2 {
+    font-size: 30px; }
+  .argument p {
+    font-size: 20px; } }
 
 /*ends media hotels*/
-
 /*starts media contact*/
 @media (max-width: 389px) {
-    .box__one {
-        width: 300px;
-    }
-
-    .box__two {
-        width: 300px;
-    }
-
-    .map iframe {
-        width: 300px;
-    }
-}
+  .box__one {
+    width: 300px; }
+  .box__two {
+    width: 300px; }
+  .map iframe {
+    width: 300px; } }
 
 @media (min-width: 768px) {
-    .box__one {
-        width: 500px;
-    }
-
-    .box__two {
-        width: 500px;
-    }
-
-    .map iframe {
-        align-items: center;
-        width: 500px;
-    }
-
-    .individual__big input {
-        width: 400px;
-    }
-}
+  .box__one {
+    width: 500px; }
+  .box__two {
+    width: 500px; }
+  .map iframe {
+    align-items: center;
+    width: 500px; }
+  .individual__big input {
+    width: 400px; } }
 
 @media (min-width: 1900px) {
-    .box__one {
-        width: 800px;
-    }
+  .box__one {
+    width: 800px; }
+  .box__two {
+    width: 800px; }
+  .map {
+    width: 800px;
+    display: flex;
+    padding-left: 50px;
+    justify-content: ledt; }
+  .individual__big input {
+    width: 650px; } }
 
-    .box__two {
-        width: 800px;
-    }
-
-    .map {
-        width: 800px;
-        display: flex;
-        padding-left: 50px;
-        justify-content: ledt;
-    }
-
-    .individual__big input {
-        width: 650px;
-    }
-
-}
+/*ends media contact*/

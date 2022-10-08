@@ -1,0 +1,160 @@
+/*starts header*/
+
+.news {
+    padding: 30px;
+    background-color: $primary-color;
+    h1{
+        @include basic;
+        font-size: 40px;
+        color: $font-color;
+        font-weight: lighter;
+    }
+}
+
+/*ends header*/
+
+/*starts main*/  
+
+.newsNews {
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    p{
+        @include news;
+        padding: 40px;
+        font-size: 20px;
+    }
+}
+
+.news__img{
+    img{
+        width: 100%;
+        height: 550px;
+    }
+}
+
+.news__descrip {
+    background-color: #BFCDD9;
+    width: 100%;
+    height: 550px;
+    ul li{
+        list-style: none;
+    }
+}
+
+.tittle h2 {
+    @include news;
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: -1px;
+}
+
+.tittle h3 {
+    letter-spacing: -1px;
+    @include news;
+    font-size: 30px;
+    color: black;
+    font-weight: lighter;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.information__news {
+    @include news;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.newsTwo {
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    p{
+        padding: 40px;
+        @include news;
+        font-size: 20px;
+    }
+}
+
+/*ends main*/
+
+/*starts more info*/ 
+
+.more__info {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: $primary-color;
+}
+
+.news__name {
+    text-align: center;
+    height: 500px;
+    width: 800px;
+    p{
+        font-family: $font-primary;
+        font-size: 25px;
+        color: $font-color;
+        padding: 50px;
+        font-weight: lighter;
+        text-decoration: underline;
+    }
+}
+
+/*ends more info*/
+
+/*starts form*/
+
+.container__form {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.news__form {
+    padding: 50px;
+    text-align: center;
+    h3{
+        font-size: 30px;
+        color: $secondary-color;
+        @include basic;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+.fill {
+    background-color: #BFCDD9;
+    height: 100px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    p{
+        font-family: $font-primary;
+        font-size: 18px;
+        color: $secondary-color;
+    }
+}
+
+.form__fill{
+    text-align: left;
+    font-family: $font-primary;
+    font-size: 15px;
+    color: $secondary-color;
+}
+
+/*ends form*/

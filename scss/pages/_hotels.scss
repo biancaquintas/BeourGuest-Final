@@ -1,0 +1,129 @@
+/*starts header*/
+
+.accom {
+    h1 {
+        @include basic;
+        font-size: 40px;
+        color: $primary-color;
+        border-bottom: solid;
+    }
+}
+
+/*ends header*/
+
+/*starts main*/
+
+.offer__container {
+    display: flex;
+    padding-top: 30px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+
+    p {
+        padding: 20px;
+        font-size: 20px;
+        @include basic;
+        color: $secondary-color;
+        font-weight: 500;
+        background-color: #ADD4D9;
+    }
+}
+
+/*ends main*/
+
+/*starts cards*/
+
+.tittle__hotels {
+    h2 {
+        @include basic;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        color: #A6775B;
+        font-weight: lighter;
+    }
+}
+
+.card__container {
+    @include flexWrap;
+    flex-direction: column;
+    align-content: center
+}
+
+.card__individual {
+    margin-bottom: 20px;
+}
+
+.card__body {
+    p {
+        font-family: $font-primary;
+        font-size: 13px;
+        color: #A6775B;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    h4 {
+        font-family: $font-primary;
+        font-size: 13px;
+        color: #A6775B;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    h3 {
+        @include basic;
+        font-size: 15px;
+        padding: 10px;
+        color: #A6775B;
+        font-weight: bold;
+    }
+}
+
+/*ends cards*/
+
+/*starts more options*/
+
+.more__op {
+    padding: 20px;
+    h2{
+        padding-top: 40px;
+        @include basic;
+        font-size: 30px;
+        font-weight: 500;
+        color: #A6775B;
+    }
+}
+
+/*button*/
+
+.argument {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    p{
+        font-family: $font-primary;
+        font-size: 16px;
+        color: $secondary-color;
+        padding: 20px;
+        text-align: left;
+        border-style: dotted;
+        border-color: #A6775B;
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+/*ends more options*/
+

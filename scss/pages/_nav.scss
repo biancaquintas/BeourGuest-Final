@@ -1,0 +1,22 @@
+.nav__botones {
+    ul {
+        display: flex;
+        padding-top: 60px;
+        padding-right: 100px;
+        li{
+            padding: 20px;
+            list-style: none;
+            a{
+                color: #B81F24;
+                text-decoration: none;
+                font-family: $font-primary;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.navbar__custom {
+    background-color: $font-color;
+}
+

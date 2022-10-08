@@ -1,0 +1,154 @@
+/*starts main*/
+.description {
+    h1 {
+        text-align: center;
+        padding: 40px;
+        color: $primary-color;
+        @include h1__home;
+        margin: 0px;
+    }
+
+    .descrip {
+        padding-left: 50px;
+        padding-right:50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+            @include h2__home;
+            color: $primary-color;
+        }
+
+        p {
+            font-family: $font-primary;
+            font-size: 15px;
+            color: $primary-color;
+        }
+
+        h3 {
+            @include h3__home;
+            color: $primary-color;
+        }
+    }
+}
+
+/*ends main*/
+
+/*starts information*/
+.info__home {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.info__img {
+    @include flexWrap;
+
+    img {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.article__one {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B80BF;
+    height: 200px;
+    justify-content: center;
+
+    h3 {
+        @include h3__home;
+        color: white;
+        text-align: left;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+    p {
+        font-family: $font-secondary;
+        font-size: 15px;
+        color: white;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+}
+
+.info__pandora {
+    display: none;
+    img{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.article__two {
+    display: none;
+}
+/*ends information*/
+
+/*starts process steps*/
+.process {
+    padding-top: 50px;
+}
+
+.get_started {
+    background-color: #FAEAD0;
+    padding: 20px;
+    h2{
+        font-family: $font-primary;
+    font-size: 30px;
+    text-align: center;
+    color: $primary-color;
+    font-weight: lighter;
+    }
+}
+
+.steps {
+    @include flexWrap;
+    justify-content: space-evenly;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.numbers {
+    display: grid;
+    justify-items: center;
+    p{
+        font-family: $font-secondary;
+        font-size: 25px;
+        color: $primary-color;
+        text-align: center;
+    }
+}
+/*ends process steps*/
+
+/*starts final section*/
+.final_section{
+    h3{
+    text-align: center;
+    font-family: $font-secondary;
+    font-weight: bolder;
+    font-size: 20px;
+    color: $primary-color;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+}
+
+.final__services {
+    @include flexWrap;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    justify-content: space-evenly
+}
+
+.services {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/*ends final section*/

@@ -1,0 +1,47 @@
+.contain__footer {
+    @include flexWrap;
+}
+
+.footer {
+    background-color: $secondary-color;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.core__info {
+    text-align: center;
+
+    ul li {
+        list-style: none;
+        color: $font-color;
+        font-family: $font-secondary;
+        font-size: 13px;
+        font-weight: lighter;
+        text-align: left;
+    }
+}
+
+.follow__us {
+    text-align: center;
+    p {
+        margin: 0px;
+        color: aliceblue;
+        font-family: $font-secondary;
+        font-size: 13px;
+        font-weight: lighter;
+    }
+}
+
+.payment {
+    padding: 0%;
+    grid-column: 1/3;
+    text-align: center;
+    p {
+        text-align: center;
+        color: $font-color;
+        font-family: $font-secondary;
+        font-size: 13px;
+        padding-top: 15px;
+        font-weight: lighter;
+    }
+}
