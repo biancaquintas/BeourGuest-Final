@@ -828,7 +828,7 @@ template {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px; }
-  .box__two .location map iframe {
+  .box__two .location .map iframe {
     width: 350px;
     height: 400px;
     padding-top: 50px; }
