@@ -13,22 +13,22 @@
 
 /*starts main*/
 
-.offer__container {
-    display: flex;
-    padding-top: 30px;
-}
-
 .offers {
     display: flex;
     justify-content: space-around;
 
-    p {
-        padding: 20px;
-        font-size: 20px;
-        @include basic;
-        color: $secondary-color;
-        font-weight: 500;
-        background-color: #ADD4D9;
+    .offer__container {
+        display: flex;
+        padding-top: 30px;
+
+        p {
+            padding: 20px;
+            font-size: 20px;
+            @include basic;
+            color: $secondary-color;
+            font-weight: 500;
+            background-color: #ADD4D9;
+        }
     }
 }
 
@@ -52,37 +52,38 @@
 .card__container {
     @include flexWrap;
     flex-direction: column;
-    align-content: center
-}
+    align-content: center;
 
-.card__individual {
-    margin-bottom: 20px;
-}
+    .card__individual {
+        margin-bottom: 20px;
 
-.card__body {
-    p {
-        font-family: $font-primary;
-        font-size: 13px;
-        color: #A6775B;
-        text-align: left;
-        padding-left: 10px;
+        .card__body {
+            p {
+                font-family: $font-primary;
+                font-size: 13px;
+                color: #A6775B;
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            h4 {
+                font-family: $font-primary;
+                font-size: 13px;
+                color: #A6775B;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            h3 {
+                @include basic;
+                font-size: 15px;
+                padding: 10px;
+                color: #A6775B;
+                font-weight: bold;
+            }
+        }
     }
 
-    h4 {
-        font-family: $font-primary;
-        font-size: 13px;
-        color: #A6775B;
-        text-align: right;
-        padding-right: 10px;
-    }
-
-    h3 {
-        @include basic;
-        font-size: 15px;
-        padding: 10px;
-        color: #A6775B;
-        font-weight: bold;
-    }
 }
 
 /*ends cards*/
@@ -91,7 +92,8 @@
 
 .more__op {
     padding: 20px;
-    h2{
+
+    h2 {
         padding-top: 40px;
         @include basic;
         font-size: 30px;
@@ -108,7 +110,8 @@
     padding-left: 20px;
     padding-top: 10px;
     padding-right: 20px;
-    p{
+
+    p {
         font-family: $font-primary;
         font-size: 16px;
         color: $secondary-color;
@@ -126,4 +129,3 @@
 }
 
 /*ends more options*/
-

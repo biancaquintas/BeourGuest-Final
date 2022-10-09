@@ -309,7 +309,7 @@ template {
   display: none; }
 
 /*Colores*/
-/*buttons hotel page*/
+/*buttons hotel*/
 .button__container {
   padding-bottom: 15px;
   padding-top: 15px;
@@ -355,137 +355,121 @@ template {
     transform: translateY(-1px); }
 
 /*buttons parks*/
-.primary-button {
-  font-family: 'Ropa Sans', sans-serif;
-  /* font-family: 'Valorant', sans-serif; */
-  color: white;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  border: 1px solid #0E1822;
-  padding: 0.8rem 2.1rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
-  background-color: #0E1822;
-  background-size: 200%;
-  background-position: 200%;
-  background-repeat: no-repeat;
-  transition: 0.3s ease-in-out;
-  transition-property: background-position, border, color;
+.button__parks {
+  display: inline-block;
+  transition: all 0.2s ease-in;
   position: relative;
-  z-index: 1; }
-  .primary-button a {
-    text-decoration: none;
-    color: white; }
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background: #253C59;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #6d5dd9, -6px -6px 12px #ffffff;
+  width: 120px;
+  height: 30px;
+  margin: 5px; }
+  .button__parks a {
+    color: white;
+    text-decoration: none; }
 
-.primary-button:hover {
-  border: 1px solid #FF4655;
-  color: white;
-  background-position: 40%; }
+.button__parks:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; }
 
-.primary-button:before {
+.button__parks:before {
   content: "";
   position: absolute;
-  background-color: #0E1822;
-  width: 0.2rem;
-  height: 0.2rem;
-  top: -1px;
-  left: -1px;
-  transition: background-color 0.15s ease-in-out; }
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1; }
 
-.primary-button:hover:before {
-  background-color: white; }
-
-.primary-button:hover:after {
-  background-color: white; }
-
-.primary-button:after {
+.button__parks:after {
   content: "";
   position: absolute;
-  background-color: #FF4655;
-  width: 0.3rem;
-  height: 0.3rem;
-  bottom: -1px;
-  right: -1px;
-  transition: background-color 0.15s ease-in-out; }
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #A24CE8;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1; }
 
-.button-borders {
-  position: relative;
-  width: fit-content;
-  height: fit-content; }
+.button__parks:hover {
+  color: #ffffff;
+  border: 1px solid #A24CE8; }
 
-.button-borders:before {
-  content: "";
-  position: absolute;
-  width: calc(100% + 0.5em);
-  height: 50%;
-  left: -0.3em;
-  top: -0.3em;
-  border: 1px solid #0E1822;
-  border-bottom: 0px;
-  /* opacity: 0.3; */ }
+.button__parks:hover:before {
+  top: -35%;
+  background-color: #A24CE8;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8); }
 
-.button-borders:after {
-  content: "";
-  position: absolute;
-  width: calc(100% + 0.5em);
-  height: 50%;
-  left: -0.3em;
-  bottom: -0.3em;
-  border: 1px solid #0E1822;
-  border-top: 0px;
-  /* opacity: 0.3; */
-  z-index: 0; }
+.button__parks:hover:after {
+  top: -45%;
+  background-color: #A24CE8;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8); }
 
-.shape {
-  fill: #0E1822; }
-
-/*buttons news*/
-.fill__button {
-  display: flex;
-  flex-direction: end; }
-
+/*button news*/
 .news__button {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
   border: none;
   background: none; }
 
+.news__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease; }
+
 .news__button span {
-  padding-bottom: 7px;
-  letter-spacing: 4px;
-  font-size: 14px;
-  padding-right: 15px;
-  text-transform: uppercase; }
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567; }
 
 .news__button svg {
-  transform: translateX(-8px);
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
   transition: all 0.3s ease; }
+
+.news__button:hover:before {
+  width: 100%;
+  background: #b1dae7; }
 
 .news__button:hover svg {
   transform: translateX(0); }
 
-.news__button:active svg {
-  transform: scale(0.9); }
-
-.hover-underline-animation {
-  position: relative;
-  color: black;
-  padding-bottom: 20px; }
-
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
-.news__button:hover .hover-underline-animation:after {
-  transform: scaleX(1);
-  transform-origin: bottom left; }
+.news__button:active {
+  transform: scale(0.95); }
 
 .nav__botones ul {
   display: flex;
@@ -552,21 +536,21 @@ template {
   font-family: "Port Lligat Slab";
   margin: 0px; }
 
-.description .descrip {
+.description .descripAboutUs {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px; }
-  .description .descrip h2 {
+  .description .descripAboutUs h2 {
     font-size: 18px;
     font-family: "Poppins";
     font-weight: bold;
     color: #245685; }
-  .description .descrip p {
+  .description .descripAboutUs p {
     font-family: "Poppins";
     font-size: 15px;
     color: #245685; }
-  .description .descrip h3 {
+  .description .descripAboutUs h3 {
     font-size: 18px;
     font-family: "Poppins";
     color: #245685; }
@@ -576,79 +560,72 @@ template {
 .info__home {
   width: 100%;
   padding-top: 10px; }
-
-.info__img {
-  display: flex;
-  flex-wrap: wrap; }
-  .info__img img {
-    width: 100%;
-    padding: 15px; }
-
-.article__one {
-  display: flex;
-  flex-direction: column;
-  background-color: #1B80BF;
-  height: 200px;
-  justify-content: center; }
-  .article__one h3 {
-    font-size: 18px;
-    font-family: "Poppins";
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    padding-right: 10px; }
-  .article__one p {
-    font-family: "Port Lligat Slab";
-    font-size: 15px;
-    color: white;
-    padding-left: 50px;
-    padding-right: 10px; }
-
-.info__pandora {
-  display: none; }
-  .info__pandora img {
-    width: 100%;
-    padding: 5px; }
-
-.article__two {
-  display: none; }
+  .info__home .info__img {
+    display: flex;
+    flex-wrap: wrap; }
+    .info__home .info__img img {
+      width: 100%;
+      padding: 15px; }
+  .info__home .info__text .article__one {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B80BF;
+    height: 200px;
+    justify-content: center; }
+    .info__home .info__text .article__one h3 {
+      font-size: 18px;
+      font-family: "Port Lligat Slab";
+      color: white;
+      text-align: left;
+      padding-left: 50px;
+      padding-right: 10px; }
+    .info__home .info__text .article__one p {
+      font-family: "Port Lligat Slab";
+      font-size: 15px;
+      color: white;
+      padding-left: 50px;
+      padding-right: 10px; }
+  .info__home .info__text .info__pandora {
+    display: none; }
+    .info__home .info__text .info__pandora img {
+      width: 100%;
+      padding: 5px; }
+  .info__home .info__text .article__two {
+    display: none; }
 
 /*ends information*/
 /*starts process steps*/
 .process {
   padding-top: 50px; }
-
-.get_started {
-  background-color: #FAEAD0;
-  padding: 20px; }
-  .get_started h2 {
-    font-family: "Poppins";
-    font-size: 30px;
-    text-align: center;
-    color: #245685;
-    font-weight: lighter; }
-
-.steps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-right: 150px;
-  padding-left: 150px;
-  padding-top: 50px;
-  padding-bottom: 70px; }
-
-.numbers {
-  display: grid;
-  justify-items: center; }
-  .numbers p {
-    font-family: "Port Lligat Slab";
-    font-size: 25px;
-    color: #245685;
-    text-align: center; }
+  .process .get_started {
+    background-color: #FAEAD0;
+    padding: 20px; }
+    .process .get_started h2 {
+      font-family: "Poppins";
+      font-size: 30px;
+      text-align: center;
+      color: #245685;
+      font-weight: lighter; }
+  .process .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 70px; }
+    .process .steps .numbers {
+      display: grid;
+      justify-items: center; }
+      .process .steps .numbers p {
+        font-family: "Port Lligat Slab";
+        font-size: 25px;
+        color: #245685;
+        text-align: center; }
 
 /*ends process steps*/
 /*starts final section*/
-.final_section h3 {
+.final__section h3 {
   text-align: center;
   font-family: "Port Lligat Slab";
   font-weight: bolder;
@@ -657,19 +634,18 @@ template {
   padding-left: 50px;
   padding-right: 50px; }
 
-.final__services {
+.final__section .final__services {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 70px;
   justify-content: space-evenly; }
-
-.services {
-  padding: 20px;
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
+  .final__section .final__services .services {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
 
 /*ends final section*/
 /*starts header*/
@@ -682,21 +658,20 @@ template {
 
 /*ends header*/
 /*starts main*/
-.offer__container {
-  display: flex;
-  padding-top: 30px; }
-
 .offers {
   display: flex;
   justify-content: space-around; }
-  .offers p {
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-    font-family: "Poppins";
-    color: #253C59;
-    font-weight: 500;
-    background-color: #ADD4D9; }
+  .offers .offer__container {
+    display: flex;
+    padding-top: 30px; }
+    .offers .offer__container p {
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      font-family: "Poppins";
+      color: #253C59;
+      font-weight: 500;
+      background-color: #ADD4D9; }
 
 /*ends main*/
 /*starts cards*/
@@ -716,31 +691,27 @@ template {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center; }
-
-.card__individual {
-  margin-bottom: 20px; }
-
-.card__body p {
-  font-family: "Poppins";
-  font-size: 13px;
-  color: #A6775B;
-  text-align: left;
-  padding-left: 10px; }
-
-.card__body h4 {
-  font-family: "Poppins";
-  font-size: 13px;
-  color: #A6775B;
-  text-align: right;
-  padding-right: 10px; }
-
-.card__body h3 {
-  text-align: center;
-  font-family: "Poppins";
-  font-size: 15px;
-  padding: 10px;
-  color: #A6775B;
-  font-weight: bold; }
+  .card__container .card__individual {
+    margin-bottom: 20px; }
+    .card__container .card__individual .card__body p {
+      font-family: "Poppins";
+      font-size: 13px;
+      color: #A6775B;
+      text-align: left;
+      padding-left: 10px; }
+    .card__container .card__individual .card__body h4 {
+      font-family: "Poppins";
+      font-size: 13px;
+      color: #A6775B;
+      text-align: right;
+      padding-right: 10px; }
+    .card__container .card__individual .card__body h3 {
+      text-align: center;
+      font-family: "Poppins";
+      font-size: 15px;
+      padding: 10px;
+      color: #A6775B;
+      font-weight: bold; }
 
 /*ends cards*/
 /*starts more options*/
@@ -785,57 +756,53 @@ template {
   padding-top: 50px;
   padding-right: 50px;
   padding-bottom: 100px;
-  background-color: #D9B4B4; }
-
-.box__one {
-  background-color: #1E1E1E;
-  width: 350px;
-  height: 950px; }
-  .box__one h2 {
-    font-family: "Poppins";
-    font-weight: lighter;
-    font-size: 20px;
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 70px;
-    padding-right: 50px;
-    padding-bottom: 20px; }
-  .box__one h1 {
-    font-family: "Poppins";
-    font-size: 40px;
-    color: white;
-    text-align: left;
-    padding-left: 50px;
-    padding-top: 5px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    margin: 0px; }
-
-.form__contacts {
-  padding-left: 50px;
-  padding-right: 50px; }
-
-.individual {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column; }
-  .individual p {
-    color: white;
-    font-family: "Poppins";
-    font-weight: lighter;
-    font-size: 20px; }
-  .individual input {
-    height: 30px;
-    width: 200px; }
-
-.individual__big {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column; }
-  .individual__big input {
-    width: 250px;
-    height: 100px; }
+  background-color: #d9b4b4; }
+  .contact__container .box__one {
+    background-color: #1e1e1e;
+    width: 350px;
+    height: 950px; }
+    .contact__container .box__one h2 {
+      font-family: "Poppins";
+      font-weight: lighter;
+      font-size: 20px;
+      color: white;
+      text-align: left;
+      padding-left: 50px;
+      padding-top: 70px;
+      padding-right: 50px;
+      padding-bottom: 20px; }
+    .contact__container .box__one h1 {
+      font-family: "Poppins";
+      font-size: 40px;
+      color: white;
+      text-align: left;
+      padding-left: 50px;
+      padding-top: 5px;
+      padding-right: 50px;
+      padding-bottom: 5px;
+      margin: 0px; }
+    .contact__container .box__one .form__contacts {
+      padding-left: 50px;
+      padding-right: 50px; }
+      .contact__container .box__one .form__contacts .individual {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column; }
+        .contact__container .box__one .form__contacts .individual p {
+          color: white;
+          font-family: "Poppins";
+          font-weight: lighter;
+          font-size: 20px; }
+        .contact__container .box__one .form__contacts .individual input {
+          height: 30px;
+          width: 200px; }
+      .contact__container .box__one .form__contacts .individual__big {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column; }
+        .contact__container .box__one .form__contacts .individual__big input {
+          width: 250px;
+          height: 100px; }
 
 /*ends black box*/
 /*starts white box*/
@@ -861,18 +828,17 @@ template {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px; }
-
-.map iframe {
-  width: 350px;
-  height: 400px;
-  padding-top: 50px; }
+  .box__two .location map iframe {
+    width: 350px;
+    height: 400px;
+    padding-top: 50px; }
 
 /*ends white box*/
 /*starts header*/
 .news {
   padding: 30px;
   background-color: #245685; }
-  .news h1 {
+  .news .news__header h1 {
     text-align: center;
     font-family: "Poppins";
     font-size: 40px;
@@ -887,55 +853,50 @@ template {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto; }
-  .newsNews p {
-    display: flex;
-    font-family: "Poppins";
-    text-align: left;
-    padding: 40px;
-    font-size: 20px; }
-
-.news__img img {
-  width: 100%;
-  height: 550px; }
-
-.news__descrip {
-  background-color: #BFCDD9;
-  width: 100%;
-  height: 550px; }
-  .news__descrip ul li {
-    list-style: none; }
-
-.tittle h2 {
-  display: flex;
-  font-family: "Poppins";
-  text-align: left;
-  font-size: 30px;
-  color: black;
-  font-weight: lighter;
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  letter-spacing: -1px; }
-
-.tittle h3 {
-  letter-spacing: -1px;
-  display: flex;
-  font-family: "Poppins";
-  text-align: left;
-  font-size: 30px;
-  color: black;
-  font-weight: lighter;
-  padding-left: 50px;
-  padding-right: 50px; }
-
-.information__news {
-  display: flex;
-  font-family: "Poppins";
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-size: 20px;
-  font-weight: lighter; }
+  .newsNews .news__descrip {
+    background-color: #BFCDD9;
+    width: 100%;
+    height: 550px; }
+    .newsNews .news__descrip .tittle h2 {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      font-size: 30px;
+      color: black;
+      font-weight: lighter;
+      padding-top: 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      letter-spacing: -1px; }
+    .newsNews .news__descrip .tittle h3 {
+      letter-spacing: -1px;
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      font-size: 30px;
+      color: black;
+      font-weight: lighter;
+      padding-left: 50px;
+      padding-right: 50px; }
+    .newsNews .news__descrip p {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      padding: 40px;
+      font-size: 20px; }
+    .newsNews .news__descrip .information__news {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 20px;
+      font-weight: lighter; }
+      .newsNews .news__descrip .information__news ul li {
+        list-style: none; }
+  .newsNews .news__img img {
+    width: 100%;
+    height: 550px; }
 
 .newsTwo {
   width: 100%;
@@ -949,6 +910,50 @@ template {
     font-family: "Poppins";
     text-align: left;
     font-size: 20px; }
+  .newsTwo .news__descrip {
+    background-color: #BFCDD9;
+    width: 100%;
+    height: 550px; }
+    .newsTwo .news__descrip .tittle h2 {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      font-size: 30px;
+      color: black;
+      font-weight: lighter;
+      padding-top: 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      letter-spacing: -1px; }
+    .newsTwo .news__descrip .tittle h3 {
+      letter-spacing: -1px;
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      font-size: 30px;
+      color: black;
+      font-weight: lighter;
+      padding-left: 50px;
+      padding-right: 50px; }
+    .newsTwo .news__descrip p {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      padding: 40px;
+      font-size: 20px; }
+    .newsTwo .news__descrip .information__news {
+      display: flex;
+      font-family: "Poppins";
+      text-align: left;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 20px;
+      font-weight: lighter; }
+      .newsTwo .news__descrip .information__news ul li {
+        list-style: none; }
+  .newsTwo .news__img img {
+    width: 100%;
+    height: 550px; }
 
 /*ends main*/
 /*starts more info*/
@@ -958,18 +963,17 @@ template {
   padding-left: 100px;
   padding-right: 100px;
   background-color: #245685; }
-
-.news__name {
-  text-align: center;
-  height: 500px;
-  width: 800px; }
-  .news__name p {
-    font-family: "Poppins";
-    font-size: 25px;
-    color: white;
-    padding: 50px;
-    font-weight: lighter;
-    text-decoration: underline; }
+  .more__info .news__name {
+    text-align: center;
+    height: 500px;
+    width: 800px; }
+    .more__info .news__name p {
+      font-family: "Poppins";
+      font-size: 25px;
+      color: white;
+      padding: 50px;
+      font-weight: lighter;
+      text-decoration: underline; }
 
 /*ends more info*/
 /*starts form*/
@@ -977,49 +981,56 @@ template {
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px; }
-
-.news__form {
-  padding: 50px;
-  text-align: center; }
-  .news__form h3 {
-    font-size: 30px;
-    color: #253C59;
-    text-align: center;
-    font-family: "Poppins";
-    padding-bottom: 20px;
-    padding-top: 20px; }
-
-.fill {
-  background-color: #BFCDD9;
-  height: 100px;
-  width: 800px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px; }
-  .fill p {
-    font-family: "Poppins";
-    font-size: 18px;
-    color: #253C59; }
-
-.form__fill {
-  text-align: left;
-  font-family: "Poppins";
-  font-size: 15px;
-  color: #253C59; }
+  .container__form .news__form {
+    padding: 50px;
+    text-align: center; }
+    .container__form .news__form h3 {
+      font-size: 30px;
+      color: #253C59;
+      text-align: center;
+      font-family: "Poppins";
+      padding-bottom: 20px;
+      padding-top: 20px; }
+  .container__form .fill {
+    background-color: #BFCDD9;
+    height: 100px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px; }
+    .container__form .fill p {
+      font-family: "Poppins";
+      font-size: 18px;
+      color: #253C59; }
+    .container__form .fill .form__fill {
+      text-align: left;
+      font-family: "Poppins";
+      font-size: 15px;
+      color: #253C59;
+      padding-left: 20px; }
 
 /*ends form*/
 /*starts header*/
-.parks__tittle h1 {
-  background-image: url(../img/parks.png);
-  width: 100%;
-  height: 500px;
-  color: white;
+.parks__tittle {
+  position: relative;
+  display: inline-block;
   text-align: center;
-  font-family: "Poppins";
-  font-size: 40px;
-  font-weight: lighter; }
+  width: 100%; }
+  .parks__tittle img {
+    width: 100%;
+    height: 600px; }
+  .parks__tittle .tittleHome h1 {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    right: 200px;
+    color: white;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: lighter; }
 
 /*ends header*/
 /*starts main*/
@@ -1131,137 +1142,480 @@ template {
     text-align: left; }
 
 /*ends add info*/
-/*starts media queries*/
-/*starts media home*/
-@media (max-width: 386px) {
+@media screen and (max-width: 330px) {
+  /*hotels*/
+  .accom h1 {
+    font-size: 30px; }
+  .card__container .card__individual {
+    width: 18rem; } }
+
+@media screen and (max-width: 386px) {
+  /*home*/
   .core__info ul li {
     font-size: 10px; } }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 389px) {
+  /*contact*/
+  .contact__container .box__one {
+    width: 300px; }
+  .contact__container .box__two {
+    width: 300px; }
+    .contact__container .box__two .location .map iframe {
+      width: 300px; } }
+
+@media screen and (max-width: 1400px) {
+  /*news*/
+  .more__info .news__name img {
+    width: 300px; } }
+
+@media screen and (max-width: 1269px) {
+  /*news**/
+  .newsTwo .news__descrip .information__news p {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px; }
+  .newsTwo .news__descrip p {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px; } }
+
+@media screen and (max-width: 1200px) {
+  /*parks*/
+  .parks__tittle img {
+    width: 100%;
+    height: 400px; }
+  .container__water {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; }
+    .container__water h2 {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .container__water .water__parks {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+      padding: 0%;
+      width: 100%;
+      height: 800px; }
+      .container__water .water__parks .typhoon__blizzard {
+        height: 400px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container__water .water__parks .typhoon__blizzard img {
+          height: 300px;
+          width: 100%; }
+  .additional__info {
+    width: 100%;
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin: 0px; }
+    .additional__info p {
+      font-size: 18px;
+      text-align: center; }
+  .presentation {
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 10px; }
+    .presentation h2 {
+      width: 100%;
+      padding: 10px;
+      margin: 0px;
+      height: 100px;
+      font-size: 18px; }
+    .presentation .info {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .presentation .info h3 {
+        font-size: 15px; }
+  .parks .studios ul li {
+    font-size: 16px; } }
+
+@media screen and (max-width: 992px) {
+  /*news*/
+  .newsNews {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 800px; }
+    .newsNews .news__img {
+      height: 400px; }
+      .newsNews .news__img img {
+        height: 400px; }
+    .newsNews .news__descrip {
+      height: 400px; }
+      .newsNews .news__descrip p {
+        font-size: 18px;
+        padding-top: 0px;
+        padding-bottom: 0px; }
+  .newsTwo {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 800px; }
+    .newsTwo .news__img {
+      height: 400px; }
+      .newsTwo .news__img img {
+        height: 100%; }
+    .newsTwo .news__descrip {
+      height: 400px; }
+      .newsTwo .news__descrip p {
+        font-size: 18px;
+        padding-top: 0px;
+        padding-bottom: 0px; }
+  .more__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .more__info .news__name {
+      width: 100%;
+      height: 400px; }
+      .more__info .news__name img {
+        width: 390px; }
+      .more__info .news__name p {
+        font-size: 18px; }
+  .container__form .news__form {
+    width: 100%; }
+    .container__form .news__form h3 {
+      font-size: 18px; }
+    .container__form .news__form .fill {
+      display: none; }
+  /*parks*/
+  .parks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .parks .studios {
+      width: 450px;
+      height: 150px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      .parks .studios img {
+        height: 200px;
+        height: 80px; }
+      .parks .studios ul {
+        display: none; }
+    .parks .pic img {
+      height: 300px;
+      width: 450px; } }
+
+@media screen and (max-width: 768px) {
+  /*news*/
+  .newsNews {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 850px; }
+    .newsNews .news__img img {
+      height: 300px; }
+  .newsTwo {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 850px; }
+    .newsTwo .news__img img {
+      height: 300px; }
+  .more__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .more__info .news__name {
+      width: 100%;
+      height: 400px; }
+      .more__info .news__name img {
+        width: 390px; }
+      .more__info .news__name p {
+        font-size: 18px; }
+  .container__form .news__form {
+    width: 100%; }
+    .container__form .news__form h3 {
+      font-size: 18px; }
+    .container__form .news__form .fill {
+      display: none; }
+  /*parks*/
+  .parks__tittle .tittleHome h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px; }
+  .parks__tittle img {
+    width: 100%;
+    height: 300px; }
+  .container__water {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; }
+    .container__water h2 {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .container__water .water__parks {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+      padding: 0%;
+      width: 100%;
+      height: 800px; }
+      .container__water .water__parks .typhoon__blizzard {
+        height: 400px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container__water .water__parks .typhoon__blizzard img {
+          height: 300px;
+          width: 100%; }
+  .additional__info {
+    width: 100%;
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin: 0px; }
+    .additional__info p {
+      font-size: 18px;
+      text-align: center; }
+  .parks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .parks .studios {
+      width: 450px;
+      height: 150px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      .parks .studios img {
+        height: 200px;
+        height: 80px; }
+      .parks .studios ul {
+        display: none; }
+    .parks .pic img {
+      height: 300px;
+      width: 450px; }
+  .presentation {
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 10px; }
+    .presentation h2 {
+      width: 100%;
+      padding: 10px;
+      margin: 0px;
+      height: 100px;
+      font-size: 18px; }
+    .presentation .info {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .presentation .info h3 {
+        font-size: 12px; } }
+
+@media screen and (max-width: 576px) {
+  /*parks*/
+  .parks__tittle .tittleHome h1 {
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px; }
+  .parks__tittle img {
+    width: 100%;
+    height: 200px; }
+  .container__water {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; }
+    .container__water h2 {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-weight: bold; }
+    .container__water .water__parks {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+      padding: 0%;
+      width: 100%;
+      height: 800px; }
+      .container__water .water__parks .typhoon__blizzard {
+        height: 400px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container__water .water__parks .typhoon__blizzard img {
+          height: 300px;
+          width: 100%; }
+  .parks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; }
+    .parks .studios {
+      width: 350px;
+      height: 150px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      .parks .studios img {
+        height: 200px;
+        height: 80px; }
+      .parks .studios ul {
+        display: none; }
+    .parks .pic img {
+      height: 300px;
+      width: 350px; }
+  .presentation {
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 10px; }
+    .presentation h2 {
+      width: 100%;
+      padding: 10px;
+      margin: 0px;
+      height: 100px;
+      font-size: 18px; }
+    .presentation .info {
+      display: none; }
+  .additional__info {
+    width: 100%;
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin: 0px; }
+    .additional__info p {
+      font-size: 15px;
+      text-align: center; }
+  /*news*/
+  .news .news__header h1 {
+    font-size: 30px; }
+  .news__descrip {
+    width: 100%;
+    height: 300px; }
+    .news__descrip p {
+      font-size: 15px;
+      margin: 0px;
+      padding-left: 50px;
+      padding-top: 50px;
+      padding-top: 10px;
+      padding-bottom: 0px; }
+    .news__descrip .tittle h2 {
+      font-size: 30px; }
+    .news__descrip .information__news {
+      display: none; }
+  .newsNews {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 610px; }
+    .newsNews .news__img {
+      height: 300px; }
+      .newsNews .news__img img {
+        height: 100%;
+        width: 100%; }
+  .newsTwo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aliceblue;
+    width: 100%;
+    margin: 0px;
+    height: 610px; }
+    .newsTwo .news__img {
+      height: 300px; }
+      .newsTwo .news__img img {
+        height: 100%;
+        width: 100%; }
+  .more__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .more__info .news__name {
+      width: 100%;
+      height: 400px; }
+      .more__info .news__name img {
+        width: 390px; }
+      .more__info .news__name p {
+        font-size: 18px; }
+  .container__form .news__form {
+    width: 100%; }
+    .container__form .news__form h3 {
+      font-size: 18px; }
+    .container__form .news__form .fill {
+      display: none; } }
+
+@media screen and (min-width: 768px) {
   .footer {
     display: flex;
     justify-content: space-evenly; }
-  .core__info {
-    padding-top: 20px; }
-  .follow__us {
-    padding: 20px; } }
-
-@media (min-width: 923px) {
-  .final__services {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%; } }
-
-@media (min-width: 1051px) {
-  .steps {
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px; } }
-
-@media (min-width: 1200px) {
-  .info__img {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; }
-  .info__img img {
-    height: 400px;
-    padding: 0px;
-    width: 50%; }
-  .info__pandora {
-    display: contents; }
-  .info__pandora img {
-    height: 400px;
-    padding: 0px; }
-  .article__one {
-    display: flex;
-    flex-direction: column;
-    background-color: #1B80BF;
-    height: 400px;
-    width: 352px;
-    justify-content: center; }
-  .article__one p {
-    padding-left: 20px;
-    font-size: 20px;
-    font-weight: lighter; }
-  .article__one h3 {
-    padding-left: 20px; }
-  .article__two {
-    display: contents;
-    display: flex;
-    flex-direction: column;
-    background-color: #FAEAD0;
-    height: 400px;
-    width: 352px;
-    justify-content: center;
-    align-items: center; }
-  .article__two h3 {
-    font-family: 'Port Lligat Slab';
-    font-size: 25px;
-    color: black;
-    padding-left: 20px;
-    padding-bottom: 20px; }
-  .info__text {
-    display: flex; }
-  .info__button {
-    display: flex;
-    justify-content: center; }
-  .info__button button {
-    color: #ffffff;
-    background-color: #245685;
-    width: 150px;
-    height: 30px;
-    border-radius: 40%; }
-  .info__home {
-    padding: 20px; }
-  .final_section h3 {
-    font-size: 30px; } }
-
-@media (min-width: 1400px) {
-  .img__carousel img {
-    height: 637px; }
-  .descrip {
-    margin-left: 150px;
-    margin-right: 150px; }
-  .descrip h2 {
-    font-size: 30px; }
-  .descrip h3 {
-    font-size: 30px;
-    font-weight: lighter; }
-  .info__img img {
-    height: 334px;
-    width: 641px; }
-  .info__text {
-    display: flex;
-    justify-content: center;
-    padding: 0px; }
-  .info__text {
-    padding: 0px; }
-  .article__one {
-    height: 443px;
-    width: 352px; }
-  .article__two {
-    height: 443px;
-    width: 352px; }
-  .info__pandora img {
-    height: 443px;
-    width: 578px; } }
-
-/*ends media home*/
-/*starts media hotels*/
-@media (max-width: 330px) {
-  .accom h1 {
-    font-size: 30px; }
-  .card__individual {
-    width: 18rem; } }
-
-@media (min-width: 768px) {
+    .footer .core__info {
+      padding-top: 20px; }
+    .footer .follow__us {
+      padding: 20px; }
+  /*hotels*/
   .argument {
     padding-left: 80px;
     padding-right: 80px; }
-  .offer__container {
-    width: 600px; } }
+  .offers .offer__container {
+    width: 600px; }
+  /*contact*/
+  .contact__container .box__one {
+    width: 500px; }
+  .contact__container .box__two {
+    width: 500px; }
+    .contact__container .box__two .location .map iframe {
+      align-items: center;
+      width: 500px; }
+    .contact__container .box__two .form__contacts .individual .individual__big input {
+      width: 400px; } }
 
-@media (min-width: 992px) {
-  .offer__container {
+@media screen and (min-width: 923px) {
+  /*home*/
+  .final__section .final__services {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; } }
+
+@media screen and (min-width: 992px) {
+  /*hotels*/
+  .offers .offer__container {
     width: 800px; }
   .argument {
     padding-left: 100px;
@@ -1273,8 +1627,106 @@ template {
     padding-left: 20px;
     padding-right: 20px; } }
 
-@media (min-width: 1400px) {
-  .offer__container {
+@media screen and (min-width: 1051px) {
+  /*home*/
+  .process .steps {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media screen and (min-width: 1200px) {
+  /*home*/
+  .info__home {
+    padding: 20px; }
+    .info__home .info__img {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; }
+      .info__home .info__img img {
+        height: 400px;
+        padding: 0px;
+        width: 50%; }
+    .info__home .info__text {
+      display: flex; }
+      .info__home .info__text .article__one {
+        display: flex;
+        flex-direction: column;
+        background-color: #1b80bf;
+        height: 400px;
+        width: 352px;
+        justify-content: center; }
+        .info__home .info__text .article__one p {
+          padding-left: 20px;
+          font-size: 20px;
+          font-weight: lighter; }
+        .info__home .info__text .article__one h3 {
+          padding-left: 20px;
+          font-size: 25px; }
+      .info__home .info__text .info__pandora {
+        display: contents; }
+        .info__home .info__text .info__pandora img {
+          height: 400px;
+          padding: 0px; }
+      .info__home .info__text .article__two {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        background-color: #faead0;
+        height: 400px;
+        width: 352px;
+        justify-content: center;
+        align-items: center; }
+        .info__home .info__text .article__two h3 {
+          font-family: "Port Lligat Slab";
+          font-size: 25px;
+          color: black;
+          padding-left: 20px;
+          padding-bottom: 20px; }
+        .info__home .info__text .article__two .info__button {
+          display: flex;
+          justify-content: center; }
+          .info__home .info__text .article__two .info__button button {
+            color: #ffffff;
+            background-color: #245685;
+            width: 150px;
+            height: 30px;
+            border-radius: 40%; }
+  .final__section h3 {
+    font-size: 30px; } }
+
+@media screen and (min-width: 1400px) {
+  /*home*/
+  .img__carousel img {
+    height: 650px; }
+  .description .descripAboutUs {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 50px; }
+    .description .descripAboutUs h2 {
+      font-size: 30px; }
+    .description .descripAboutUs h3 {
+      font-size: 25px;
+      font-weight: lighter; }
+    .description .descripAboutUs p {
+      font-size: 20px; }
+  .info__home .info__img img {
+    height: 334px;
+    width: 641px; }
+  .info__home .info__text {
+    display: flex;
+    justify-content: center;
+    padding: 0px; }
+    .info__home .info__text .article__one {
+      height: 443px;
+      width: 352px; }
+    .info__home .info__text .article__two {
+      height: 443px;
+      width: 352px; }
+    .info__home .info__text .info__pandora img {
+      height: 443px;
+      width: 578px; }
+  /*hotels*/
+  .offers .offer__container {
     width: 900px; }
   .card__container {
     display: flex;
@@ -1282,59 +1734,38 @@ template {
     justify-content: space-evenly;
     padding-left: 80px;
     padding-right: 80px; }
+    .card__container .card__individual {
+      height: 432px;
+      margin: 0px;
+      width: 22rem; }
+      .card__container .card__individual .card__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
   .argument {
     padding-left: 200px;
     padding-right: 200px; }
-  .card__individual {
-    height: 432px;
-    margin: 0px;
-    width: 22rem; }
-  .card__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    .argument p {
+      font-size: 20px; }
   .video {
     padding-bottom: 120px; }
-  .video iframe {
-    width: 748px;
-    height: 436px; }
+    .video iframe {
+      width: 748px;
+      height: 436px; }
   .tittle_hotels h2 {
-    font-size: 30px; }
-  .argument p {
-    font-size: 20px; } }
+    font-size: 30px; } }
 
-/*ends media hotels*/
-/*starts media contact*/
-@media (max-width: 389px) {
-  .box__one {
-    width: 300px; }
-  .box__two {
-    width: 300px; }
-  .map iframe {
-    width: 300px; } }
-
-@media (min-width: 768px) {
-  .box__one {
-    width: 500px; }
-  .box__two {
-    width: 500px; }
-  .map iframe {
-    align-items: center;
-    width: 500px; }
-  .individual__big input {
-    width: 400px; } }
-
-@media (min-width: 1900px) {
-  .box__one {
+@media screen and (min-width: 1900px) {
+  /*contact*/
+  .contact__container .box__one {
     width: 800px; }
-  .box__two {
+    .contact__container .box__one .individual__big input {
+      width: 650px; }
+  .contact__container .box__two {
     width: 800px; }
-  .map {
-    width: 800px;
-    display: flex;
-    padding-left: 50px;
-    justify-content: ledt; }
-  .individual__big input {
-    width: 650px; } }
-
-/*ends media contact*/
+    .contact__container .box__two .location .map {
+      width: 800px;
+      display: flex;
+      padding-left: 50px;
+      justify-content: left;
+      padding-left: 50px; } }
