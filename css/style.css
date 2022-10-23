@@ -1523,18 +1523,15 @@ template {
     font-size: 30px; }
   .news__descrip {
     width: 100%;
-    height: 300px; }
-    .news__descrip p {
-      font-size: 15px;
-      margin: 0px;
-      padding-left: 50px;
-      padding-top: 50px;
-      padding-top: 10px;
-      padding-bottom: 0px; }
-    .news__descrip .tittle h2 {
-      font-size: 30px; }
+    height: 100%; }
+    .news__descrip .tittle {
+      padding: 25px; }
+      .news__descrip .tittle h2 {
+        font-size: 30px; }
     .news__descrip .information__news {
       display: none; }
+  .information__news ul li {
+    font-size: 15px; }
   .newsNews {
     display: flex;
     flex-direction: column;
@@ -1542,7 +1539,8 @@ template {
     border-color: aliceblue;
     width: 100%;
     margin: 0px;
-    height: 610px; }
+    height: 610px;
+    background-color: #1b80bf; }
     .newsNews .news__img {
       height: 300px; }
       .newsNews .news__img img {
@@ -1556,12 +1554,17 @@ template {
     border-color: aliceblue;
     width: 100%;
     margin: 0px;
-    height: 610px; }
+    height: 610px;
+    padding-bottom: 10px; }
     .newsTwo .news__img {
       height: 300px; }
       .newsTwo .news__img img {
         height: 100%;
         width: 100%; }
+  .tittleNews {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .more__info {
     display: flex;
     flex-direction: column;
