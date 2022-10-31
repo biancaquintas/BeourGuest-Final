@@ -85,6 +85,11 @@
 
 
 @media screen and (max-width: 1200px) {
+
+
+
+
+
   /*parks*/
 
   .parks__tittle {
@@ -193,7 +198,7 @@
     height: 800px;
 
     .news__img {
-      height: 400px;
+
 
       img {
         height: 400px;
@@ -316,7 +321,7 @@
     border-color: aliceblue;
     width: 100%;
     margin: 0px;
-    height: 850px;
+
 
     .news__img {
       img {
@@ -632,10 +637,11 @@
     width: 100%;
     height: 100%;
 
-    
+
 
     .tittle {
       padding: 25px;
+
       h2 {
         font-size: 30px;
       }
@@ -645,16 +651,18 @@
       display: none;
     }
 
-   
+
   }
-.information__news{
-  ul{
-    li{
-      font-size: 15px;
-      
+
+  .information__news {
+    ul {
+      li {
+        font-size: 15px;
+
+      }
     }
   }
-}
+
   .newsNews {
     display: flex;
     flex-direction: column;
@@ -695,12 +703,14 @@
       }
     }
   }
-  .tittleNews{
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
+
+  .tittleNews {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
   }
+
   .more__info {
     display: flex;
     flex-direction: column;
@@ -709,6 +719,7 @@ padding-bottom: 20px;
     padding-right: 0px;
 
     .news__name {
+      padding-top: 50px;
       width: 100%;
       height: 400px;
 
@@ -739,6 +750,16 @@ padding-bottom: 20px;
 
 
 @media screen and (min-width: 768px) {
+  .tittleNews {
+    h2 {
+      padding-left: 5%;
+    }
+
+    h3 {
+      padding-left: 5%;
+    }
+  }
+
   .footer {
     display: flex;
     justify-content: space-evenly;
@@ -845,6 +866,9 @@ padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
+
+
+
 
   /*home*/
   .info__home {
