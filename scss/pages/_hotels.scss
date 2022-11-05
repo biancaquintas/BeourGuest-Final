@@ -56,7 +56,12 @@
 
     .card__individual {
         margin-bottom: 20px;
-
+        .zoom{
+            transition: transform 2s; /* Animation */
+            :hover{
+                transform: scale(1.2);
+            }
+        }
         .card__body {
             p {
                 font-family: $font-primary;

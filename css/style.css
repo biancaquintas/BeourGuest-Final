@@ -693,6 +693,11 @@ template {
   align-content: center; }
   .card__container .card__individual {
     margin-bottom: 20px; }
+    .card__container .card__individual .zoom {
+      transition: transform 2s;
+      /* Animation */ }
+      .card__container .card__individual .zoom :hover {
+        transform: scale(1.2); }
     .card__container .card__individual .card__body p {
       font-family: "Poppins";
       font-size: 13px;
@@ -1078,6 +1083,10 @@ template {
   list-style-position: inside; }
   .studios ul {
     margin: 0px; }
+
+:hoover {
+  transform: scale(1.5);
+  transition: transform .2s; }
 
 .counting li {
   text-align: left;

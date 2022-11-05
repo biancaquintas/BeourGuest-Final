@@ -81,6 +81,11 @@
     }
 }
 
+:hoover{
+    transform: scale(1.5); 
+    transition: transform .2s;
+}
+
 .counting li {
     text-align: left;
     padding-left: 10px;
@@ -95,7 +100,12 @@
 .pic img {
     width: 500px;
     height: 380px;
+    
+
+   
+   
 }
+
 
 /*ends cards*/
 
